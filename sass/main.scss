@@ -11,15 +11,12 @@ body {
 	background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    // height: 900px;
     background-size: cover;
     padding-bottom: 15%;
-    // max-height: 900px;
     @media (max-width: 1169px) { 
     	background-image: url(../img/front-header-mobile.jpg);
-    	background-size: cover;
-        // height: 875px;
-        // max-height: 875px;
+    	background-size: contain;
+        padding-bottom: 81%;
     }
     .logo {
     	left: 30px;
@@ -51,6 +48,9 @@ body {
     .top-nav-collapse {
     	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     	background-color: white;
+    	@media (max-width: 1169px) { 
+    		padding-top: 10px;
+    	}
     	.logo {
     		img {
     			width: 43px;
@@ -62,10 +62,18 @@ body {
     	}
     }
     .front-header__slogan {
-	color: white;
-	font-weight: 700;
-	padding-top: 12%;
-	margin-top: 0;
+		color: white;
+		font-weight: 700;
+		padding-top: 12%;
+		margin-top: 0;
+	    @media (max-width: 1169px) { 
+	        top: 32%;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            left: 5%;
+            right: 5%;
+        }
     }
     .front-header__search {
     	background-color: rgba(0, 0, 0, 0.5);
@@ -89,6 +97,9 @@ body {
                 @include border-radius(3px);
                 padding-left: 15px;
                 width: 98%;
+                @media (max-width: 1169px) {
+                	width: 95%;
+                }
 
         	}
         	input {
@@ -106,10 +117,13 @@ body {
                 margin: 0;
                 position: absolute;
                 @include border-right-radius(3px);
+                @include border-top-left-radius(0);
+                @include border-bottom-left-radius(0);
                 font-weight: 700;
                 position: absolute;
 			    right: 60px;
 			    top: 0;
+			    height: 88px;
 			    @media (max-width: 1169px) {
 			    	right: 34px;
 			    	background-image: url(../img/search.png);
@@ -117,6 +131,7 @@ body {
                     background-repeat: no-repeat;
                     text-indent: -250px;
                     width: 15%;
+                    height: 44px;
 			    }
         	}
         	.input-field {
@@ -140,7 +155,7 @@ body {
 	}
 	ul {
 		li {
-			width: 16%;
+			width: 15%;
             @include inline-block;
 			img {
 				margin: 0 auto;
