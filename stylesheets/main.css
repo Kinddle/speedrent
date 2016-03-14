@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700,300,400);
+/* line 3, ../sass/main.scss */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 6, ../sass/main.scss */
+.container {
+  width: 1200px;
+}
+
+/* line 9, ../sass/main.scss */
+.front-header {
+  background-image: url(../img/front-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-size: cover;
+  padding-bottom: 15%;
+}
+@media (max-width: 1169px) {
+  /* line 9, ../sass/main.scss */
+  .front-header {
+    background-image: url(../img/front-header-mobile.jpg);
+    background-size: cover;
+  }
+}
+/* line 24, ../sass/main.scss */
+.front-header .logo {
+  left: 30px;
+  position: relative;
+  top: 5px;
+}
+/* line 28, ../sass/main.scss */
+.front-header .logo img {
+  position: absolute;
+}
+/* line 32, ../sass/main.scss */
+.front-header .btn-white {
+  border: 1px solid #dddddd;
+  color: #3f4d65;
+  background-color: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  margin-right: 30px;
+  font-weight: 700;
+}
+/* line 39, ../sass/main.scss */
+.front-header .btn-white:hover {
+  background-color: #276ef2;
+  border-color: #276ef2;
+}
+/* line 44, ../sass/main.scss */
+.front-header .btn {
+  box-shadow: none;
+  text-transform: none;
+}
+/* line 48, ../sass/main.scss */
+.front-header .z-depth-1 {
+  box-shadow: none;
+}
+/* line 51, ../sass/main.scss */
+.front-header .top-nav-collapse {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+/* line 55, ../sass/main.scss */
+.front-header .top-nav-collapse .logo img {
+  width: 43px;
+  height: 51px;
+}
+/* line 59, ../sass/main.scss */
+.front-header .top-nav-collapse .logo .show-when-collapse {
+  display: inline-block !important;
+}
+/* line 64, ../sass/main.scss */
+.front-header .front-header__slogan {
+  color: white;
+  font-weight: 700;
+  padding-top: 12%;
+  margin-top: 0;
+}
+/* line 70, ../sass/main.scss */
+.front-header .front-header__search {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  margin-top: 50px;
+  max-width: 1170px;
+}
+@media (max-width: 1169px) {
+  /* line 70, ../sass/main.scss */
+  .front-header .front-header__search {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}
+/* line 81, ../sass/main.scss */
+.front-header .front-header__search .front-header__search-input-box {
+  overflow: hidden;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+@media (max-width: 1169px) {
+  /* line 81, ../sass/main.scss */
+  .front-header .front-header__search .front-header__search-input-box {
+    font-size: 45%;
+  }
+}
+/* line 87, ../sass/main.scss */
+.front-header .front-header__search .front-header__search-input-box .areaName {
+  background-color: white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding-left: 15px;
+  width: 98%;
+}
+/* line 94, ../sass/main.scss */
+.front-header .front-header__search .front-header__search-input-box input {
+  font-size: 2.25em;
+  height: 87px;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1169px) {
+  /* line 94, ../sass/main.scss */
+  .front-header .front-header__search .front-header__search-input-box input {
+    margin-bottom: 2rem;
+    height: 43px;
+  }
+}
+/* line 103, ../sass/main.scss */
+.front-header .front-header__search .front-header__search-input-box .btn-default {
+  background-color: #4abbab;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: 700;
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+@media (max-width: 1169px) {
+  /* line 103, ../sass/main.scss */
+  .front-header .front-header__search .front-header__search-input-box .btn-default {
+    right: 34px;
+    background-image: url(../img/search.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -250px;
+    width: 15%;
+  }
+}
+/* line 122, ../sass/main.scss */
+.front-header .front-header__search .front-header__search-input-box .input-field {
+  margin-top: 3rem;
+  position: relative;
+  padding: 0 30px;
+  padding: 0 4rem;
+}
+@media (max-width: 1169px) {
+  /* line 122, ../sass/main.scss */
+  .front-header .front-header__search .front-header__search-input-box .input-field {
+    margin-top: 2rem;
+    padding: 0 2.5rem;
+  }
+}
+
+/* line 136, ../sass/main.scss */
+.logo-brand {
+  margin: 40px;
+}
+@media (max-width: 1169px) {
+  /* line 136, ../sass/main.scss */
+  .logo-brand {
+    margin: 40px 0;
+  }
+}
+/* line 142, ../sass/main.scss */
+.logo-brand ul li {
+  width: 16%;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 145, ../sass/main.scss */
+.logo-brand ul li img {
+  margin: 0 auto;
+}
+@media (max-width: 1169px) {
+  /* line 145, ../sass/main.scss */
+  .logo-brand ul li img {
+    width: 78%;
+  }
+}
