@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:700,300,400);
 /* line 3, ../sass/main.scss */
 body {
@@ -358,4 +359,275 @@ body {
     width: inherit;
     float: none;
   }
+}
+
+/* line 251, ../sass/main.scss */
+.navbar-brand {
+  margin-left: 0 !important;
+}
+/* line 253, ../sass/main.scss */
+.navbar-brand img {
+  width: 38%;
+}
+
+/* line 258, ../sass/main.scss */
+.navbar .navbar-toggle {
+  float: left;
+}
+
+/* line 262, ../sass/main.scss */
+.navbar-header {
+  width: 100%;
+}
+
+/* line 266, ../sass/main.scss */
+.listing-page .logo {
+  padding: 20px;
+}
+/* line 268, ../sass/main.scss */
+.listing-page .logo img {
+  width: 60%;
+}
+/* line 272, ../sass/main.scss */
+.listing-page .speedrent__social-box {
+  margin: 0;
+}
+/* line 275, ../sass/main.scss */
+.listing-page .navbar-header {
+  width: 100%;
+  padding: 10px 0;
+}
+/* line 279, ../sass/main.scss */
+.listing-page .side-block {
+  padding: 20px;
+  background-color: #f2f2f2;
+  /* Base for label styling */
+  /* checkbox aspect */
+  /* checked mark aspect */
+  /* checked mark aspect changes */
+  /* accessibility */
+  /* hover style just for information */
+}
+/* line 282, ../sass/main.scss */
+.listing-page .side-block .side__filter-title {
+  color: #b3b9be;
+  font-weight: 700;
+}
+/* line 287, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:not(:checked),
+.listing-page .side-block [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+/* line 292, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:not(:checked) + label,
+.listing-page .side-block [type="checkbox"]:checked + label {
+  position: relative;
+  padding: 0 80px;
+  cursor: pointer;
+}
+/* line 299, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 311, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:checked + label:after {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: white;
+  transition: all .2s;
+  background-color: #3b99fc;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  padding: 2px;
+}
+/* line 327, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+/* line 331, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* line 338, ../sass/main.scss */
+.listing-page .side-block [type="checkbox"]:checked:focus + label:before:active,
+.listing-page .side-block [type="checkbox"]:not(:checked):focus + label:before:active {
+  background-color: #3b99fc;
+}
+/* line 344, ../sass/main.scss */
+.listing-page .side-block label:hover:before {
+  border: 1px solid #4778d9 !important;
+}
+/* line 347, ../sass/main.scss */
+.listing-page .side-block .checkbox-wrap {
+  position: relative;
+  height: 60px;
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+/* line 353, ../sass/main.scss */
+.listing-page .side-block .checkbox-wrap img {
+  position: absolute;
+  left: 39px;
+  top: 0;
+}
+/* line 358, ../sass/main.scss */
+.listing-page .side-block .checkbox-wrap .high-rise {
+  top: -7px;
+}
+/* line 362, ../sass/main.scss */
+.listing-page .side-block .checkbox-wrap label span {
+  position: absolute;
+  left: 36px;
+  top: 35px;
+}
+/* line 369, ../sass/main.scss */
+.listing-page .side-block .select-item-text {
+  overflow: hidden;
+}
+/* line 372, ../sass/main.scss */
+.listing-page .side-block .arr-left {
+  background: url("../img/left-select-left.png") 0 0 no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 34px;
+  padding-bottom: 10%;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+/* line 382, ../sass/main.scss */
+.listing-page .side-block .arr-right {
+  background: url("../img/left-select-right.png") 0 0 no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 34px;
+  padding-bottom: 10%;
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+/* line 392, ../sass/main.scss */
+.listing-page .side-block .filter-selects-item-box {
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 397, ../sass/main.scss */
+.listing-page .side-block .filter-selects-item-box .filter-select-item {
+  display: block;
+  font-size: 16px;
+  color: #333333;
+}
+/* line 401, ../sass/main.scss */
+.listing-page .side-block .filter-selects-item-box .filter-select-item .select-item-text {
+  line-height: 56px;
+  padding-left: 60px;
+  margin-left: 50px;
+}
+/* line 407, ../sass/main.scss */
+.listing-page .side-block .filter-selects-item-box .filter-select-item .bedroom-icon {
+  background-image: url("../img/left-bedroom.png");
+  background-repeat: no-repeat;
+  background-position: 9px 10px;
+}
+/* line 412, ../sass/main.scss */
+.listing-page .side-block .filter-selects-item-box .filter-select-item .parking-icon {
+  background-image: url("../img/left-parking-space.png");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+/* line 417, ../sass/main.scss */
+.listing-page .side-block .filter-selects-item-box .filter-select-item .furnishing-icon {
+  background-image: url("../img/left-furnishing.png");
+  background-repeat: no-repeat;
+  background-position: 0 17px;
+}
+/* line 425, ../sass/main.scss */
+.listing-page .side-block .filter-price-range .min-price, .listing-page .side-block .filter-price-range .max-price {
+  font-size: 1.25em;
+  display: inline-flex;
+}
+/* line 428, ../sass/main.scss */
+.listing-page .side-block .filter-price-range .min-price .amount, .listing-page .side-block .filter-price-range .max-price .amount {
+  margin-left: 5px;
+}
+/* line 432, ../sass/main.scss */
+.listing-page .side-block .filter-price-range .ui-slider {
+  background-color: #d2d2d2;
+  height: 3px;
+}
+/* line 435, ../sass/main.scss */
+.listing-page .side-block .filter-price-range .ui-slider .ui-slider-handle {
+  background: #ffffff;
+  border: 1px solid #bababa;
+  box-shadow: 0 1px 3px #ddd;
+  float: left;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-left: -14px;
+  outline: none;
+  position: absolute;
+}
+/* line 449, ../sass/main.scss */
+.listing-page .side-block .filter-price-range .ui-slider-range {
+  position: absolute;
+  background-color: #4abaaa;
+  height: inherit;
+  border: 0;
+}
+/* line 455, ../sass/main.scss */
+.listing-page .side-block .filter-price-range .range-box {
+  margin: 7% 2% 10% 2%;
+}
+/* line 461, ../sass/main.scss */
+.listing-page .filter-selects .reset-filters {
+  background: #ffffff;
+  border: 2px solid #d9d9d9;
+  border-radius: 6px;
+  color: #333333;
+  display: block;
+  margin: 0;
+}
+/* line 469, ../sass/main.scss */
+.listing-page .filter-selects .btn {
+  -moz-box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+/* line 474, ../sass/main.scss */
+.listing-page .search-box .search-icon {
+  color: #b3b9be;
+}
+/* line 476, ../sass/main.scss */
+.listing-page .search-box .search-icon.active {
+  color: #3b99fc;
+}
+/* line 480, ../sass/main.scss */
+.listing-page .search-box .material-icons.prefix {
+  top: 11px;
+}
+/* line 485, ../sass/main.scss */
+.listing-page .search-box .input-field label.active {
+  color: #3b99fc;
 }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design for Bootstrap</title>
+
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
+    <!-- Main.css -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="listing-page">
+        <div class="row">
+            <div class="col-md-12 col-lg-3">
+                <section>
+                    <div class="logo">
+                        <a href="home.html">
+                            <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="side-block clearfix">
+                        <form class="clearfix" action="" method="post" name="filters" id="filters">
+                            <p class="side__filter-title">Housing Type</p>
+                            <div class="checkbox-wrap">
+                                <img class="high-rise" src="img/left-high-rise.png">
+                                <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
+                                <label for="high-rise">
+                                    <span>high-rise</span>
+                                </label>
+                            </div><!-- checkbox-wrap -->
+                            <div class="checkbox-wrap">
+                                <img src="img/left-landed.png">
+                                <input type="checkbox" class="filled-in" id="landed" checked="checked" />
+                                <label for="landed">
+                                    <span>Landed</span>
+                                </label>
+                            </div><!-- checkbox-wrap -->
+                            <p class="side__filter-title">Property Size</p>
+                            <div class="filter-selects">
+                                <div class="filter-selects-item-box">
+                                    <a href="#" class="arr-left"></a>
+                                    <div class="filter-select-item">
+                                        <div class="select-item-text bedroom-icon">
+                                            <span class="option"></span> Bedroom
+                                            <select class="hidden" name="bedroom">
+                                                <option value="1" selected="selected"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                                <option value="4"></option>
+                                                <option value="5"></option>
+                                            </select>
+                                        </div><!-- select-item-text -->
+                                    </div><!-- filter-select-item -->
+                                    <a href="#" class="arr-right"></a>
+                                </div><!-- class="filter-selects-item-box -->
+                                <div class="filter-selects-item-box">
+                                    <a href="#" class="arr-left"></a>
+                                    <div class="filter-select-item">
+                                        <div class="select-item-text parking-icon">
+                                            <span class="option"></span> Parking Space
+                                            <select class="hidden" name="carpark">
+                                                <option value="1" selected="selected"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                                <option value="4"></option>
+                                                <option value="5"></option>
+                                            </select>
+                                        </div><!-- select-item-text -->
+                                    </div><!-- filter-selects-item-box -->
+                                    <a href="#" class="arr-right"></a>
+                                </div>
+                                <div class="filter-selects-item-box">
+                                    <a href="#" class="arr-left"></a>
+                                    <div class="filter-select-item">
+                                        <div class="select-item-text furnishing-icon">
+                                            <span class="option">Basic Furnishing</span>
+                                            <select class="hidden" name="furnishing">
+                                                <option value="Basic Furnishing"></option>
+                                                <option value="Partial Furnishing"></option>
+                                                <option value="Fully Furnishing"></option>
+                                            </select>
+                                        </div><!-- select-item-text -->
+                                    </div><!-- filter-select-item -->
+                                    <a href="#" class="arr-right"></a>
+                                </div><!-- filter-selects-item-box -->
+                                <p class="side__filter-title">Price Range</p>
+                                <div class="filter-price-range">
+                                    <div class="min-price">RM 
+                                        <div class="amount"></div>
+                                    </div>
+                                    <input type="hidden" id="maxPrice" name="maxPrice" value="9000">
+                                    <input type="hidden" id="minPrice" name="minPrice" value="100">
+                                    <div class="max-price pull-right"><span>RM</span>
+                                        <div class="amount"></div>
+                                    </div>
+                                    <div class="range-box">
+                                        <div class="filter-price-range--ui"></div>
+                                    </div>
+                                </div>
+                                <a class="btn reset-filters waves-effect waves-dark">Reset Filters</a>
+                            </div><!-- filter-selects -->
+                        </form>
+                    </div><!-- side-block -->
+                </section>
+            </div><!-- col-md-12 col-lg-3 -->
+            <div class="col-md-9">
+                <section>
+                    <div class="search-box">
+                        <div class="row">
+                            <form class="col-md-10">
+                                <div class="row">
+                                    <div class="input-field col-lg-10">
+                                        <i class="material-icons prefix search-icon">search</i>
+                                        <input id="icon_prefix" type="text" class="validate">
+                                        <label for="icon_prefix">Search</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="speedrent__social-box">
+                        <a href="https://www.facebook.com/speedrent">
+                            <img class="img-responsive" src="img/fb.png">
+                        </a>
+                        <a href="https://twitter.com/speedrentapp">
+                            <img class="img-responsive" src="img/tw.png">
+                        </a>
+                    </div>
+                        </div>
+                    </div><!-- search-box -->
+                </section>
+            </div>
+        </div>
+    </div><!-- listing-page -->
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <!-- main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>

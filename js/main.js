@@ -1,20 +1,96 @@
-// $(document).ready(function () {
-// 	// global vars
-// 	var winWidth = $(window).width();
-// 	var winHeight = $(window).height();
+$(document).ready(function () {
 
-// 	// set initial div height / width
-// 	$('.front-header').css({
-//         'width': winWidth,
-//         'height': winHeight,
-// 	});
+        /* Range of price */
+    var bedroom = 1;
+    var isFilter = $('#isFilter').val();
 
-// 	// make sure div stays full width/height on resize
-// 	$(window).resize(function(){
-// 		console.log('resized');
-//         $('.front-header').css({
-//         'width': winWidth,
-//         'height': winHeight,
-//         });
-//     });
-// });
+        var rangeValues = [100, 8000];
+        if (isFilter == "1") {
+           rangeValues = [parseInt($('#minPrice').val()), parseInt($('#maxPrice').val())];
+        }
+        // $('#landed').change(function() {
+        //     $('#isFilter').val('1');
+        //     $('#highrise').prop('checked', false); 
+        //     $('#filters').submit();
+        // });
+       //    $('#highrise').change(function() {
+       //        $('#isFilter').val('1');
+      // //        $('#landed').prop('checked', false); 
+      //        $('#filters').submit();
+      //    });
+    var slider = $( ".filter-price-range--ui" ).slider({
+      range: true,
+      min: 100,
+      max: 9000,
+      step: 100,
+      values: rangeValues,
+      slide: function( event, ui ) {
+        $('.filter-price-range .min-price .amount').html(ui.values[0]);
+        $('.filter-price-range .max-price .amount').html(ui.values[1]);
+      },
+      change: function( event, ui ) {
+        $('.filter-price-range .min-price .amount').html(ui.values[0]);
+        $('.filter-price-range .max-price .amount').html(ui.values[1]);
+        $('#minPrice').val(ui.values[0]);
+        $('#maxPrice').val(ui.values[1]);
+        $('#isFilter').val('1');
+        // $('#filters').submit();
+      }
+    });
+    $('.filter-price-range .min-price .amount').html(rangeValues[0]);
+    $('.filter-price-range .max-price .amount').html(rangeValues[1]);
+
+    /* Custom selects */
+
+    $('.select-item-text .option').html(function() {
+      return $(this).siblings('.hidden').val();
+    });
+
+    $('.filter-selects-item-box .arr-left').click(function(e) {
+      e.preventDefault();
+
+      var select = $(this).siblings('.filter-select-item').find('select.hidden');
+      if (select.find(':first').is(':not(:selected)')) {
+        var optionIndex = select.find(':selected').index();
+        select.find('option:selected').removeAttr("selected");
+        select.find('option').eq(optionIndex - 1).attr('selected', 'selected');
+        select.change();
+        // $('#isFilter').val('1');
+        // $('#filters').submit();
+      }
+    });
+
+    $('.filter-selects-item-box .arr-right').click(function(e) {
+      e.preventDefault();
+      var select = $(this).siblings('.filter-select-item').find('select.hidden');
+      if (select.find(':last').is(':not(:selected)')) {
+        var optionIndex = select.find(':selected').index();
+        select.find('option:selected').removeAttr("selected");
+        select.find('option').eq(optionIndex + 1).attr('selected', 'selected');
+        select.change();
+        // $('#isFilter').val('1');
+        // $('#filters').submit();
+      }
+    });
+
+    $('.select-item-text select.hidden').change(function() {
+      var value = $(this).val();
+      $(this).siblings('.option').html(value);
+    });
+
+    /* Reset filters */
+
+    // $('.left-side .reset-filters').click(function(e) {
+    //   e.preventDefault();
+    //   $('.left-side .select-item-text select.hidden').each(function() {
+    //     $(this).find('option:first').attr('selected', 'selected');
+    //     $(this).change();
+    //   });
+
+    //   console.dir(slider);
+    //   slider.slider("values", rangeValues);
+    //   $('#isFilter').val('0');
+    //   $('#filters').submit();
+    // });
+
+});
