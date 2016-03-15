@@ -6,6 +6,17 @@ body {
 .container {
 	width: 1200px;
 }
+.divider {
+	border-top: 1px solid #eeeeee;
+}
+.padding-block-medium {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.padding-block-sides-midium {
+	padding-left: 7%;
+	padding-right: 7%;
+}
 .front-header {
 	background-image: url(../img/front-header.jpg);
 	background-repeat: no-repeat;
@@ -151,7 +162,7 @@ body {
 .logo-brand {
 	margin: 40px;
 	@media (max-width: 1169px) { 
-		margin: 40px 0;
+		margin: 40px 7%;
 	}
 	ul {
 		li {
@@ -165,4 +176,62 @@ body {
 			}
 		}
 	}
+}
+.speedrent__footer-title {
+	color: #3f4d65;
+	font-weight: 700;
+	@media (max-width: 1169px) { 
+		font-size: 2rem;
+	}
+}
+.speedrent__footer-sub-title {
+	@media (max-width: 1169px) { 
+		@include inline-block;
+		width: 50%;
+        float: left;
+	}
+	a {
+		line-height: 33px;
+	    color: #8691a5;
+	    font-size: 17px;
+	    font-weight: 700;
+	    @media (max-width: 1169px) { 
+	    	font-size: 21px;
+
+	    }
+	}
+}
+.speedrent__footer-text {
+	font-size: 17px;
+	line-height: 23px;
+	@media (max-width: 1169px) { 
+	    font-size: 20px;
+        line-height: 25px;
+    }
+}
+.speedrent__social-box {
+	margin: 0.82rem 0 0.656rem 0;
+	img {
+		@include inline-block;
+		margin: 0 20px;
+		@media (max-width: 1169px) { 
+		}
+		margin: 0 40px 0 0;
+	}
+}
+.copyright {
+	padding: 30px 0;
+    color: #949cab;
+    text-align: center;
+    display: block;
+    @media (max-width: 1169px) { 
+    	text-align: left;
+    }
+    a {
+    	color: #3f4d65;
+    	@media (max-width: 1169px) { 
+    	    width: inherit;
+            float: none;
+        }
+    }
 }
