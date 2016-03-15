@@ -26,7 +26,16 @@ body {
   padding-right: 7%;
 }
 
-/* line 20, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
+.home-navbar .top-nav-collapse {
+  display: none;
+}
+/* line 24, ../sass/main.scss */
+.home-navbar .navbar {
+  padding-top: 10px;
+}
+
+/* line 28, ../sass/main.scss */
 .front-header {
   background-image: url(../img/front-header.jpg);
   background-repeat: no-repeat;
@@ -36,24 +45,24 @@ body {
   padding-bottom: 15%;
 }
 @media (max-width: 1169px) {
-  /* line 20, ../sass/main.scss */
+  /* line 28, ../sass/main.scss */
   .front-header {
     background-image: url(../img/front-header-mobile.jpg);
     background-size: contain;
     padding-bottom: 81%;
   }
 }
-/* line 32, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .front-header .logo {
   left: 30px;
   position: relative;
   top: 5px;
 }
-/* line 36, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .front-header .logo img {
   position: absolute;
 }
-/* line 40, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .front-header .btn-white {
   border: 1px solid #dddddd;
   color: #3f4d65;
@@ -64,49 +73,51 @@ body {
   margin-right: 30px;
   font-weight: 700;
 }
-/* line 47, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .front-header .btn-white:hover {
   background-color: #276ef2;
   border-color: #276ef2;
+  color: white;
 }
-/* line 52, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .front-header .btn {
   box-shadow: none;
   text-transform: none;
 }
-/* line 56, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .front-header .z-depth-1 {
   box-shadow: none;
 }
-/* line 59, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .front-header .top-nav-collapse {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: white;
 }
 @media (max-width: 1169px) {
-  /* line 59, ../sass/main.scss */
+  /* line 68, ../sass/main.scss */
   .front-header .top-nav-collapse {
     padding-top: 10px;
   }
 }
-/* line 66, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .front-header .top-nav-collapse .logo img {
   width: 43px;
   height: 51px;
 }
-/* line 70, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .front-header .top-nav-collapse .logo .show-when-collapse {
   display: inline-block !important;
 }
-/* line 75, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .front-header .front-header__slogan {
   color: white;
   font-weight: 700;
   padding-top: 12%;
   margin-top: 0;
+  font-size: 3.56rem;
 }
 @media (max-width: 1169px) {
-  /* line 75, ../sass/main.scss */
+  /* line 84, ../sass/main.scss */
   .front-header .front-header__slogan {
     top: 32%;
     position: absolute;
@@ -114,9 +125,10 @@ body {
     padding: 0;
     left: 5%;
     right: 5%;
+    font-size: 2.18rem;
   }
 }
-/* line 89, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .front-header .front-header__search {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5em;
@@ -124,7 +136,7 @@ body {
   max-width: 1170px;
 }
 @media (max-width: 1169px) {
-  /* line 89, ../sass/main.scss */
+  /* line 100, ../sass/main.scss */
   .front-header .front-header__search {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -134,7 +146,7 @@ body {
     bottom: 0;
   }
 }
-/* line 100, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .front-header .front-header__search .front-header__search-input-box {
   overflow: hidden;
   -moz-border-radius: 3px;
@@ -142,12 +154,12 @@ body {
   border-radius: 3px;
 }
 @media (max-width: 1169px) {
-  /* line 100, ../sass/main.scss */
+  /* line 111, ../sass/main.scss */
   .front-header .front-header__search .front-header__search-input-box {
     font-size: 45%;
   }
 }
-/* line 106, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .front-header .front-header__search .front-header__search-input-box .areaName {
   background-color: white;
   -moz-border-radius: 3px;
@@ -157,25 +169,26 @@ body {
   width: 98%;
 }
 @media (max-width: 1169px) {
-  /* line 106, ../sass/main.scss */
+  /* line 117, ../sass/main.scss */
   .front-header .front-header__search .front-header__search-input-box .areaName {
     width: 95%;
+    font-size: medium;
   }
 }
-/* line 116, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .front-header .front-header__search .front-header__search-input-box input {
-  font-size: 2.25em;
-  height: 87px;
+  font-size: 2rem;
+  height: 66px;
   margin-bottom: 3rem;
 }
 @media (max-width: 1169px) {
-  /* line 116, ../sass/main.scss */
+  /* line 128, ../sass/main.scss */
   .front-header .front-header__search .front-header__search-input-box input {
     margin-bottom: 2rem;
     height: 43px;
   }
 }
-/* line 125, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .front-header .front-header__search .front-header__search-input-box .btn-default {
   background-color: #4abbab;
   color: #ffffff;
@@ -195,12 +208,12 @@ body {
   border-bottom-left-radius: 0;
   font-weight: 700;
   position: absolute;
-  right: 60px;
+  right: 62px;
   top: 0;
-  height: 88px;
+  height: 67px;
 }
 @media (max-width: 1169px) {
-  /* line 125, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
   .front-header .front-header__search .front-header__search-input-box .btn-default {
     right: 34px;
     background-image: url(../img/search.png);
@@ -211,7 +224,7 @@ body {
     height: 44px;
   }
 }
-/* line 148, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 .front-header .front-header__search .front-header__search-input-box .input-field {
   margin-top: 3rem;
   position: relative;
@@ -219,24 +232,24 @@ body {
   padding: 0 4rem;
 }
 @media (max-width: 1169px) {
-  /* line 148, ../sass/main.scss */
+  /* line 160, ../sass/main.scss */
   .front-header .front-header__search .front-header__search-input-box .input-field {
     margin-top: 2rem;
     padding: 0 2.5rem;
   }
 }
 
-/* line 162, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .logo-brand {
   margin: 40px;
 }
 @media (max-width: 1169px) {
-  /* line 162, ../sass/main.scss */
+  /* line 174, ../sass/main.scss */
   .logo-brand {
     margin: 40px 7%;
   }
 }
-/* line 168, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .logo-brand ul li {
   width: 15%;
   display: inline-block;
@@ -245,31 +258,31 @@ body {
   *zoom: 1;
   *display: inline;
 }
-/* line 171, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .logo-brand ul li img {
   margin: 0 auto;
 }
 @media (max-width: 1169px) {
-  /* line 171, ../sass/main.scss */
+  /* line 183, ../sass/main.scss */
   .logo-brand ul li img {
     width: 78%;
   }
 }
 
-/* line 180, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .speedrent__footer-title {
   color: #3f4d65;
   font-weight: 700;
 }
 @media (max-width: 1169px) {
-  /* line 180, ../sass/main.scss */
+  /* line 192, ../sass/main.scss */
   .speedrent__footer-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
 @media (max-width: 1169px) {
-  /* line 187, ../sass/main.scss */
+  /* line 199, ../sass/main.scss */
   .speedrent__footer-sub-title {
     display: inline-block;
     vertical-align: middle;
@@ -280,7 +293,7 @@ body {
     float: left;
   }
 }
-/* line 193, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .speedrent__footer-sub-title a {
   line-height: 33px;
   color: #8691a5;
@@ -288,30 +301,30 @@ body {
   font-weight: 700;
 }
 @media (max-width: 1169px) {
-  /* line 193, ../sass/main.scss */
+  /* line 205, ../sass/main.scss */
   .speedrent__footer-sub-title a {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 
-/* line 204, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 .speedrent__footer-text {
   font-size: 17px;
   line-height: 23px;
 }
 @media (max-width: 1169px) {
-  /* line 204, ../sass/main.scss */
+  /* line 216, ../sass/main.scss */
   .speedrent__footer-text {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 
-/* line 212, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 .speedrent__social-box {
-  margin: 0.82rem 0 0.656rem 0;
+  margin: 2rem 0 0.656rem 0;
 }
-/* line 214, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .speedrent__social-box img {
   display: inline-block;
   vertical-align: middle;
@@ -322,7 +335,7 @@ body {
   margin: 0 40px 0 0;
 }
 
-/* line 222, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 .copyright {
   padding: 30px 0;
   color: #949cab;
@@ -330,17 +343,17 @@ body {
   display: block;
 }
 @media (max-width: 1169px) {
-  /* line 222, ../sass/main.scss */
+  /* line 234, ../sass/main.scss */
   .copyright {
     text-align: left;
   }
 }
-/* line 230, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .copyright a {
   color: #3f4d65;
 }
 @media (max-width: 1169px) {
-  /* line 230, ../sass/main.scss */
+  /* line 242, ../sass/main.scss */
   .copyright a {
     width: inherit;
     float: none;

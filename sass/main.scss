@@ -17,6 +17,14 @@ body {
 	padding-left: 7%;
 	padding-right: 7%;
 }
+.home-navbar {
+	.top-nav-collapse {
+		display: none;
+	}
+	.navbar {
+		padding-top: 10px;
+	}
+}
 .front-header {
 	background-image: url(../img/front-header.jpg);
 	background-repeat: no-repeat;
@@ -47,6 +55,7 @@ body {
         &:hover {
         	background-color: #276ef2;
         	border-color: #276ef2;
+        	color: white;
         }
     }
     .btn {
@@ -77,6 +86,7 @@ body {
 		font-weight: 700;
 		padding-top: 12%;
 		margin-top: 0;
+		font-size: 3.56rem;
 	    @media (max-width: 1169px) { 
 	        top: 32%;
             position: absolute;
@@ -84,6 +94,7 @@ body {
             padding: 0;
             left: 5%;
             right: 5%;
+            font-size: 2.18rem;
         }
     }
     .front-header__search {
@@ -110,12 +121,13 @@ body {
                 width: 98%;
                 @media (max-width: 1169px) {
                 	width: 95%;
+                	font-size: medium;
                 }
 
         	}
         	input {
-                font-size: 2.25em;
-                height: 87px;
+                font-size: 2rem;
+                height: 66px;
                 margin-bottom: 3rem;
                 @media (max-width: 1169px) { 
                 	margin-bottom: 2rem;
@@ -132,9 +144,9 @@ body {
                 @include border-bottom-left-radius(0);
                 font-weight: 700;
                 position: absolute;
-			    right: 60px;
+			    right: 62px;
 			    top: 0;
-			    height: 88px;
+			    height: 67px;
 			    @media (max-width: 1169px) {
 			    	right: 34px;
 			    	background-image: url(../img/search.png);
@@ -181,7 +193,7 @@ body {
 	color: #3f4d65;
 	font-weight: 700;
 	@media (max-width: 1169px) { 
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 }
 .speedrent__footer-sub-title {
@@ -196,7 +208,7 @@ body {
 	    font-size: 17px;
 	    font-weight: 700;
 	    @media (max-width: 1169px) { 
-	    	font-size: 21px;
+	    	font-size: 18px;
 
 	    }
 	}
@@ -205,12 +217,12 @@ body {
 	font-size: 17px;
 	line-height: 23px;
 	@media (max-width: 1169px) { 
-	    font-size: 20px;
-        line-height: 25px;
+	    font-size: 16px;
+        line-height: 21px;
     }
 }
 .speedrent__social-box {
-	margin: 0.82rem 0 0.656rem 0;
+	margin: 2rem 0 0.656rem 0;
 	img {
 		@include inline-block;
 		margin: 0 20px;
