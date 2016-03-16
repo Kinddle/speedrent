@@ -1,10 +1,28 @@
+
 $(document).ready(function () {
+    /* equal-heights-responsive */
+    $('.equal-height').equalHeights({
+    });
+
+    $(".fixed-form").stick_in_parent({
+       parent: "#side-block",
+       offset_top: 80,
+       // bottoming: true
+       inner_scrolling: false,
+       spacer: true
+    })
+      .on("sticky_kit:stick", function(e) {
+      console.log("has stuck!", e.target);
+    })
+      .on("sticky_kit:unstick", function(e) {
+      console.log("has unstuck!", e.target);
+    });
 
         /* Range of price */
     var bedroom = 1;
     var isFilter = $('#isFilter').val();
 
-        var rangeValues = [100, 8000];
+        var rangeValues = [600, 3500];
         if (isFilter == "1") {
            rangeValues = [parseInt($('#minPrice').val()), parseInt($('#maxPrice').val())];
         }
@@ -20,8 +38,8 @@ $(document).ready(function () {
       //    });
     var slider = $( ".filter-price-range--ui" ).slider({
       range: true,
-      min: 100,
-      max: 9000,
+      min: 600,
+      max: 3500,
       step: 100,
       values: rangeValues,
       slide: function( event, ui ) {
@@ -92,5 +110,4 @@ $(document).ready(function () {
     //   $('#isFilter').val('0');
     //   $('#filters').submit();
     // });
-
 });

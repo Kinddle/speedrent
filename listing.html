@@ -27,16 +27,24 @@
 
 <body>
     <div class="listing-page">
-        <div class="row">
-            <div class="col-md-12 col-lg-3 reset-padding-r">
+        <!--Navigation-->
+        <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+            <div class="logo">
+                <img class="img-responsive hidden show-when-collapse" src="img/logo-house-green.png" alt="Logo">
+            </div>
+            <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post a Property</a>
+            <a href="/post" class="hidden-lg pull-right btn btn-white waves-effect waves-light">Post</a>
+        </nav><!--/.Navigation-->
+        <div class="row reset-all-padding">
+            <div class="col-md-12 col-lg-3 border-r-custom reset-padding-r">
                 <section>
                     <div class="logo">
-                        <a href="home.html">
+                        <a class="clearfix" href="home.html">
                             <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="side-block clearfix">
-                        <form class="clearfix" action="" method="post" name="filters" id="filters">
+                    <div id="side-block" class="side-block equal-height border-r-custom border-top-bottom-custom clearfix">
+                        <form class="clearfix fixed-form" action="" method="post" name="filters" id="filters">
                             <p class="side__filter-title">Housing Type</p>
                             <div class="checkbox-wrap">
                                 <img class="high-rise" src="img/left-high-rise.png">
@@ -105,8 +113,8 @@
                                     <div class="min-price">RM 
                                         <div class="amount"></div>
                                     </div>
-                                    <input type="hidden" id="maxPrice" name="maxPrice" value="9000">
-                                    <input type="hidden" id="minPrice" name="minPrice" value="100">
+                                    <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
+                                    <input type="hidden" id="minPrice" name="minPrice" value="600">
                                     <div class="max-price pull-right"><span>RM</span>
                                         <div class="amount"></div>
                                     </div>
@@ -145,7 +153,7 @@
                     </div><!-- search-box -->
                 </section>
                 <section>
-                    <div class="listing-content-block">
+                    <div class="listing-content-block equal-height border-top-bottom-custom">
                         <h6 class="h5-responsive">Search Results for <span>Bukit Jalil (2)</span></h6>
                         <div class="row">
                             <div class="col-md-5">
@@ -179,20 +187,17 @@
                                                 <span>Fully Furnished</span>
                                             </li>
                                         </ul><!-- card-price-description -->
-                                        <div class="card-price-wrap">
-                                            <ul class="card-price-description card-included-content"> 
-                                                <li>
-                                                    <span>3<img src="img/left-bedroom.png"></span>
-                                                </li>
-                                                <li>
-                                                    <span>3<img src="img/bathroom.png"></span>
-                                                </li>
-                                                <li>
-                                                    <span>3<img src="img/left-parking-space.png"></span>
-                                                </li>
-                                            </ul><!-- card-price-description -->
-                                            <a class=" pull-right btn btn-yellow waves-effect waves-light">Chat with Landlord</a>
-                                        </div><!-- card-price-wrap -->
+                                        <ul class="card-price-description card-included-content"> 
+                                            <li>
+                                                <span>3<img src="img/left-bedroom.png"></span>
+                                            </li>
+                                            <li>
+                                                <span>3<img src="img/bathroom.png"></span>
+                                            </li>
+                                            <li>
+                                                <span>3<img src="img/left-parking-space.png"></span>
+                                            </li>
+                                        </ul><!-- card-price-description -->
                                     </div><!-- card-content -->
                                 </div>
                                 <!--Image Card-->
@@ -227,20 +232,17 @@
                                                 <span>Fully Furnished</span>
                                             </li>
                                         </ul><!-- card-price-description -->
-                                        <div class="card-price-wrap">
-                                            <ul class="card-price-description card-included-content"> 
-                                                <li>
-                                                    <span>3<img src="img/left-bedroom.png"></span>
-                                                </li>
-                                                <li>
-                                                    <span>3<img src="img/bathroom.png"></span>
-                                                </li>
-                                                <li>
-                                                    <span>3<img src="img/left-parking-space.png"></span>
-                                                </li>
-                                            </ul><!-- card-price-description -->
-                                            <a class=" pull-right btn btn-yellow waves-effect waves-light">Chat with Landlord</a>
-                                        </div><!-- card-price-wrap -->
+                                        <ul class="card-price-description card-included-content"> 
+                                            <li>
+                                                <span>3<img src="img/left-bedroom.png"></span>
+                                            </li>
+                                            <li>
+                                                <span>3<img src="img/bathroom.png"></span>
+                                            </li>
+                                            <li>
+                                                <span>3<img src="img/left-parking-space.png"></span>
+                                            </li>
+                                        </ul><!-- card-price-description -->
                                     </div><!-- card-content -->
                                 </div>
                                 <!--Image Card-->
@@ -252,6 +254,7 @@
                                 <!--Image Card-->
                                 <div class="card hoverable">
                                     <div class="card-image">
+                                        <span class="label label-distance">300m</span>
                                         <div class="view overlay hm-white-slight z-depth-1">
                                             <img src="img/list-prevew-picture.png" class="img-responsive" alt="">
                                             <a href="#">
@@ -259,7 +262,6 @@
                                             </a>
                                         </div>
                                         <div class="card-title">
-                                            <span class="label label-distance">300m</span>
                                             <h5 class="h5-responsive">Taman Equine</h5>
                                         </div>
                                     </div><!-- card-image -->
@@ -279,20 +281,17 @@
                                                 <span>Fully Furnished</span>
                                             </li>
                                         </ul><!-- card-price-description -->
-                                        <div class="card-price-wrap">
-                                            <ul class="card-price-description card-included-content"> 
-                                                <li>
-                                                    <span>3<img src="img/left-bedroom.png"></span>
-                                                </li>
-                                                <li>
-                                                    <span>3<img src="img/bathroom.png"></span>
-                                                </li>
-                                                <li>
-                                                    <span>3<img src="img/left-parking-space.png"></span>
-                                                </li>
-                                            </ul><!-- card-price-description -->
-                                            <a class=" pull-right btn btn-yellow waves-effect waves-light">Chat with Landlord</a>
-                                        </div><!-- card-price-wrap -->
+                                        <ul class="card-price-description card-included-content"> 
+                                            <li>
+                                                <span>3<img src="img/left-bedroom.png"></span>
+                                            </li>
+                                            <li>
+                                                <span>3<img src="img/bathroom.png"></span>
+                                            </li>
+                                            <li>
+                                                <span>3<img src="img/left-parking-space.png"></span>
+                                            </li>
+                                        </ul><!-- card-price-description -->
                                     </div><!-- card-content -->
                                 </div>
                                 <!--Image Card-->
@@ -302,12 +301,56 @@
                 </section>
             </div>
         </div>
+        <footer class="padding-block-medium padding-block-sides-midium">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Speedrent</h5>
+                    <p class="speedrent__footer-text">support@speedrent.com<br> +60 1234 5678</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Company</h5>
+                    <ul class="clearfix">
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/about-us/">About Us</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/press-release/">Press</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/blog/">Blog</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/contact-us/">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Product</h5>
+                    <ul class="clearfix">
+                        <li class="speedrent__footer-sub-title">
+                            <a href="speedrent.html">Speedrent</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="speedsign.html">Speedsign</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/terms/">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="padding-block-sides-midium center-block">
+                <span class="copyright">&copy; Speedrent 2016. All images are the property of their respective owners. &shy; &#124 &shy; &shy;<a class="speedrent__footer-sub-title" href="http://speedrent.com/web/terms/">Privacy Policy</a></span>
+            </div>
+        </footer>
     </div><!-- listing-page -->
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.equalheights.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -316,6 +359,9 @@
     <script type="text/javascript" src="js/mdb.js"></script>
     <!-- main.js -->
     <script type="text/javascript" src="js/main.js"></script>
+    
+    <!-- equal-heights-responsive -->
+    
 
 
 </body>
