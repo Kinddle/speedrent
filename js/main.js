@@ -1,5 +1,11 @@
 
 $(document).ready(function () {
+	/* search mobile */
+    new UISearch( document.getElementById( 'sb-search' ) );
+
+	$(".card").click(function(){
+      window.location=$(this).find("a").attr("href"); return false;
+	});
     /* equal-heights-responsive */
     $('.equal-height').equalHeights({
     });

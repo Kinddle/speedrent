@@ -278,10 +278,180 @@ body {
 .navbar-header {
 	width: 100%;
 }
+// sb-search
+.sb-search {
+	position: relative;
+	width: 0%;
+	min-width: 49px;
+    height: 49px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+.sb-search-input {
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	z-index: 10;
+	font-family: inherit;
+	font-size: 20px;
+	color: #2c3e50;
+	text-indent: 50px;
+	&::-webkit-input-placeholder {
+		color: #b2b2b2;
+	}
+	&:-moz-placeholder {
+		color: #b2b2b2;
+	}
+	&::-moz-placeholder {
+		color: #b2b2b2;
+	}
+	&:-ms-input-placeholder {
+		color: #b2b2b2;
+	}
+}
+input[type="search"].sb-search-input {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+}
+.sb-icon-search {
+	width: 49px;
+	height: 49px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #dddddd;
+	background: white;
+	z-index: 90;
+	font-size: 22px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
+.sb-icon-close {
+    width: 49px;
+	height: 49px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #dddddd;
+	background: white;
+	z-index: 80;
+	font-size: 22px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
+.sb-search-submit {
+	width: 49px;
+	height: 49px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	background: #fff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+.sb-search.sb-search-open {
+	width: 100%;
+	.sb-icon-search {
+		background: white;
+		color: #dddddd;
+		z-index: 11;
+	}
+	.sb-search-submit {
+		z-index: 90;
+	}
+}
+.no-js {
+	.sb-search {
+		width: 100%;
+		.sb-icon-search {
+			background: #da6d0d;
+			color: #fff;
+			z-index: 11;
+		}
+		.sb-search-submit {
+			z-index: 90;
+		}
+	}
+}
+// sb-search
+
 .listing-page {
 	overflow: hidden;
 	.navbar-fixed-top {
         display: none;
+        @media (max-width: 1169px) {
+        	display: block;
+        	background-color: white;
+        	height: 50px;
+        }
+        .logo {
+        	top: -17px;
+	        @media (max-width: 1169px) { 
+			    position: absolute;
+	            left: 38%;
+	        }
+	        a {
+	        	img {
+	        		@media (max-width: 1169px) {
+	        			width: 38%;
+	        		}
+	        	}
+	        }
+	    }
+	    .search-icon {
+            right: 21%;
+            top: 26%;
+            position: absolute;
+	    }
+	    .close-icon {
+	    	position: absolute;
+            right: 21%;
+            top: 26%;
+	    }
 	}
 	.top-nav-collapse {
 		height: 80px;
@@ -289,18 +459,33 @@ body {
 		display: block;
     	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     	background-color: white;
-    	@media (max-width: 1169px) { 
-    		padding-top: 10px;
+    	@media (max-width: 1169px) {
+    		height: 50px;
+    	}
+        .show-when-collapse {
+        	@media (max-width: 1169px) { 
+        		margin-left: 0;
+        	}
+        }
+        .search-icon {
+    		color: #b3b9be;
+    		position: absolute;
+    		right: 21%;
+            top: 29%;
+    		&.active {
+    			color: #3b99fc;
+    		}
     	}
     	.logo {
-    		height: 80px;
-            display: inline-block;
-		    vertical-align: middle;
-		    line-height: 69px;
-		    padding-left: 20px;
+    		top: -17px;
+		    @media (max-width: 1169px) { 
+		        position: absolute;
+                left: 38%;
+            }
     		img {
-    			width: 43px;
-    			height: 51px;
+    			@media (max-width: 1169px) { 
+    				padding-left: 0;
+    			}
     		}
     		.show-when-collapse {
     			display: inline-block !important;
@@ -571,6 +756,9 @@ body {
     		    font-weight: 300;
     	    }
     	}
+    	.card {
+    		cursor: pointer
+    	}
     	.card-image {
     		position: relative;
     		.label-distance {
@@ -639,6 +827,7 @@ body {
     	margin-right: 9%;
     }
 }
+
 
 
 

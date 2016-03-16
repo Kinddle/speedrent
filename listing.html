@@ -30,15 +30,30 @@
         <!--Navigation-->
         <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
             <div class="logo">
-                <img class="img-responsive hidden show-when-collapse" src="img/logo-house-green.png" alt="Logo">
+                <a href="home.html">
+                    <img class="img-responsive" src="img/logo-house-green.png" alt="Logo">
+                </a>
             </div>
+            <div id="sb-search" class="sb-search hidden-lg">
+                <form>
+                    <input class="sb-search-input" placeholder="Search" type="search" value="" name="search" id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"><i class="material-icons prefix search-icon">search</i></span>
+                    <span class="sb-icon-close"><i class="material-icons prefix close-icon">close</i></span>
+                </form>
+            </div>
+            <!-- <div class="input-field hidden-lg">
+                <i class="material-icons prefix search-icon">search</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Search</label>
+            </div> -->
             <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post a Property</a>
-            <a href="/post" class="hidden-lg pull-right btn btn-white waves-effect waves-light">Post</a>
+            <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post</a>
         </nav><!--/.Navigation-->
         <div class="row reset-all-padding">
             <div class="col-md-12 col-lg-3 border-r-custom reset-padding-r">
                 <section>
-                    <div class="logo">
+                    <div class="logo visible-lg">
                         <a class="clearfix" href="home.html">
                             <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
                         </a>
@@ -142,13 +157,13 @@
                                 </div>
                             </form>
                             <div class="speedrent__social-box">
-                        <a href="https://www.facebook.com/speedrent">
-                            <img class="img-responsive" src="img/fb.png">
-                        </a>
-                        <a href="https://twitter.com/speedrentapp">
-                            <img class="img-responsive" src="img/tw.png">
-                        </a>
-                    </div>
+                                <a href="https://www.facebook.com/speedrent">
+                                    <img class="img-responsive" src="img/fb.png">
+                                </a>
+                                <a href="https://twitter.com/speedrentapp">
+                                    <img class="img-responsive" src="img/tw.png">
+                                </a>
+                            </div>
                         </div>
                     </div><!-- search-box -->
                 </section>
@@ -158,7 +173,7 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <!--Image Card-->
-                                <div class="card hoverable">
+                                <div onclick="location.href='/'" class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
                                             <img src="img/list-prevew-picture.png" class="img-responsive" alt="">
@@ -204,7 +219,7 @@
                             </div>
                             <div class="col-md-5">
                                 <!--Image Card-->
-                                <div class="card hoverable">
+                                <div onclick="location.href='/'" class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
                                             <img src="img/list-prevew-picture.png" class="img-responsive" alt="">
@@ -252,7 +267,7 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <!--Image Card-->
-                                <div class="card hoverable">
+                                <div onclick="location.href='/'" class="card hoverable">
                                     <div class="card-image">
                                         <span class="label label-distance">300m</span>
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -351,6 +366,9 @@
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.equalheights.min.js"></script>
     <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js/uisearch.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
