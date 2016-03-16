@@ -17,6 +17,12 @@ body {
 	padding-left: 7%;
 	padding-right: 7%;
 }
+.reset-padding-l {
+	padding-left: 0;
+}
+.reset-padding-r {
+	padding-right: 0;
+}
 .home-navbar {
 	.top-nav-collapse {
 		display: none;
@@ -471,6 +477,11 @@ body {
     	}
     }
     .search-box {
+    	padding: 20px;
+    	height: 89px;
+    	.input-field {
+    		margin-top: 0;
+    	}
     	.search-icon {
     		color: #b3b9be;
     		&.active {
@@ -485,6 +496,95 @@ body {
                 &.active {
     			color: #3b99fc;
     		    }
+    		}
+    	}
+    	#icon_prefix {
+    		border-bottom: none;
+    	}
+    }
+    .speedrent__social-box {
+    	padding: 10px 0;
+    	img {
+    		height: 35px;
+    	}
+    }
+    .listing-content-block {
+    	background-color: #f9f9f9;
+    	padding: 20px;
+    	h6 {
+    		margin-bottom: 30px;
+    		font-weight: 700;
+    		span {
+    		    font-weight: 300;
+    	    }
+    	}
+    	.card-image {
+    		position: relative;
+    		.label-distance {
+    			position: absolute;
+    			left: 0;
+    			top: -120px;
+    			background-color: #fa4a84;
+    		}
+    	}
+    	.card-title {
+    		width: 100% !important;
+    		.hot-deal {
+    			position: relative;
+    			font-size: 17px;
+                font-weight: 700;
+                background-color: #8a2ffb;
+    			padding-left: 32px;
+                &:before {
+    				background-image: url("../img/card-label-new.png");
+    				background-repeat: no-repeat;
+    				background-position: 0 0;
+    				height: 14px;
+    				width: 14px;
+    				display: block;
+    				content: '';
+    				position: absolute;
+    				left: 10px;
+                    top: 7px;
+    			}
+    		}
+    	}
+    	.card-content {
+    		.card-price {
+                font-weight: 700;
+    		}
+    		.card-price-info {
+    			color: #fa4a84;
+    			font-weight: 400;
+    		}
+    		.card-price-description {
+    			margin-bottom: 0;
+    			li {
+    				@include inline-block;
+    				color: #5d5d5d;
+    			}
+    			img {
+    				height: 20px;
+    			}
+    		}
+    		.card-price-wrap {
+    			display: block;
+    			height: 62px;
+                .card-included-content {
+    			    @include inline-block; 
+    			    padding: 18px 0;
+    			    li {
+                        margin-right: 10px;
+                        img {
+                        	margin-left: 10px;
+                        }
+                    }
+    		    }
+	    		.btn-yellow {
+	    			background-color: #fddf00;
+	    			color: #333333;
+	    			text-transform: capitalize;
+	    		}
     		}
     	}
     }
