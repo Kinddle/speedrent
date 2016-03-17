@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
-	/* search mobile */
+	$('#modal-filter').modal('hide');
+    /* search mobile */
     new UISearch( document.getElementById( 'sb-search' ) );
 
 	$(".card").click(function(){

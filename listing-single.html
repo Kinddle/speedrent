@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design for Bootstrap</title>
+
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
+    <!-- Main.css -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="listing-page listing-page-single">
+        <!--Navigation-->
+        <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+            <!--/. SideNav slide-out button -->
+            <!-- <button type="button" class="navbar-toggle collapsed hidden-lg" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse hidden-lg" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="waves-effect waves-light">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="waves-effect waves-light">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> --><!-- navbar-collapse -->
+            <div class="logo">
+                <a href="home.html">
+                    <img class="img-responsive" src="img/logo-house-green.png" alt="Logo">
+                </a>
+            </div>
+            <div id="sb-search" class="sb-search hidden-lg">
+                <form>
+                    <input class="sb-search-input" placeholder="Search" type="search" value="" name="search" id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"><i class="material-icons prefix search-icon">search</i></span>
+                    <span class="sb-icon-close"><i class="material-icons prefix close-icon">close</i></span>
+                </form>
+            </div>
+            <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post a Property</a>
+            <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post</a>
+        </nav><!--/.Navigation-->
+        <div class="row reset-all-padding">
+            <div class="col-md-12 col-lg-3 border-r-custom reset-padding-r">
+                <section class="visible-lg">
+                    <div class="logo visible-lg">
+                        <a class="clearfix" href="home.html">
+                            <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div id="side-block" class="side-block equal-height border-r-custom border-top-bottom-custom clearfix">
+                        <form class="clearfix fixed-form" action="" method="post" name="filters" id="filters">
+                            <p class="side__filter-title">Housing Type</p>
+                            <div class="checkbox-wrap">
+                                <img class="high-rise" src="img/left-high-rise.png">
+                                <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
+                                <label for="high-rise">
+                                    <span>high-rise</span>
+                                </label>
+                            </div><!-- checkbox-wrap -->
+                            <div class="checkbox-wrap">
+                                <img src="img/left-landed.png">
+                                <input type="checkbox" class="filled-in" id="landed" checked="checked" />
+                                <label for="landed">
+                                    <span>Landed</span>
+                                </label>
+                            </div><!-- checkbox-wrap -->
+                            <p class="side__filter-title">Property Size</p>
+                            <div class="filter-selects">
+                                <div class="filter-selects-item-box">
+                                    <a href="#" class="arr-left"></a>
+                                    <div class="filter-select-item">
+                                        <div class="select-item-text bedroom-icon">
+                                            <span class="option"></span> Bedroom
+                                            <select class="hidden" name="bedroom">
+                                                <option value="1" selected="selected"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                                <option value="4"></option>
+                                                <option value="5"></option>
+                                            </select>
+                                        </div><!-- select-item-text -->
+                                    </div><!-- filter-select-item -->
+                                    <a href="#" class="arr-right"></a>
+                                </div><!-- class="filter-selects-item-box -->
+                                <div class="filter-selects-item-box">
+                                    <a href="#" class="arr-left"></a>
+                                    <div class="filter-select-item">
+                                        <div class="select-item-text parking-icon">
+                                            <span class="option"></span> Parking Space
+                                            <select class="hidden" name="carpark">
+                                                <option value="1" selected="selected"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                                <option value="4"></option>
+                                                <option value="5"></option>
+                                            </select>
+                                        </div><!-- select-item-text -->
+                                    </div><!-- filter-selects-item-box -->
+                                    <a href="#" class="arr-right"></a>
+                                </div>
+                                <div class="filter-selects-item-box">
+                                    <a href="#" class="arr-left"></a>
+                                    <div class="filter-select-item">
+                                        <div class="select-item-text furnishing-icon">
+                                            <span class="option">Basic Furnishing</span>
+                                            <select class="hidden" name="furnishing">
+                                                <option value="Basic Furnishing"></option>
+                                                <option value="Partial Furnishing"></option>
+                                                <option value="Fully Furnishing"></option>
+                                            </select>
+                                        </div><!-- select-item-text -->
+                                    </div><!-- filter-select-item -->
+                                    <a href="#" class="arr-right"></a>
+                                </div><!-- filter-selects-item-box -->
+                                <p class="side__filter-title">Price Range</p>
+                                <div class="filter-price-range">
+                                    <div class="min-price">RM 
+                                        <div class="amount"></div>
+                                    </div>
+                                    <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
+                                    <input type="hidden" id="minPrice" name="minPrice" value="600">
+                                    <div class="max-price pull-right"><span>RM</span>
+                                        <div class="amount"></div>
+                                    </div>
+                                    <div class="range-box">
+                                        <div class="filter-price-range--ui"></div>
+                                    </div>
+                                </div>
+                                <a class="btn reset-filters waves-effect waves-dark">Reset Filters</a>
+                            </div><!-- filter-selects -->
+                        </form>
+                    </div><!-- side-block -->
+                </section>
+            </div><!-- col-md-12 col-lg-3 -->
+            <div class="col-md-9 reset-padding-l">
+                <section>
+                    <div class="search-box search-box-list-single">
+                        <a href="listing.html">
+                            < Back to Listings </h6>
+                        </a>
+                        <div class="speedrent__social-box">
+                            <a href="https://www.facebook.com/speedrent">
+                                <img class="img-responsive" src="img/fb.png">
+                            </a>
+                            <a href="https://twitter.com/speedrentapp">
+                                <img class="img-responsive" src="img/tw.png">
+                            </a>
+                        </div>
+                    </div><!-- search-box -->
+                </section>
+                <section>
+                    <div class="listing-content-block equal-height border-top-bottom-custom">
+                        <section id="filter-box" class="hidden-lg">
+                            <div class="logo hidden-lg">
+                                <a class="clearfix" href="home.html">
+                                    <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
+                                </a>
+                            </div>
+                            <div id="side-block" class="side-block equal-height border-r-custom border-top-bottom-custom clearfix">
+                                <form class="clearfix fixed-form" action="" method="post" name="filters" id="filters">
+                                    <p class="side__filter-title">Housing Type</p>
+                                    <div class="checkbox-wrap">
+                                        <img class="high-rise" src="img/left-high-rise.png">
+                                        <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
+                                        <label for="high-rise">
+                                            <span>high-rise</span>
+                                        </label>
+                                    </div><!-- checkbox-wrap -->
+                                    <div class="checkbox-wrap">
+                                        <img src="img/left-landed.png">
+                                        <input type="checkbox" class="filled-in" id="landed" checked="checked" />
+                                        <label for="landed">
+                                            <span>Landed</span>
+                                        </label>
+                                    </div><!-- checkbox-wrap -->
+                                    <p class="side__filter-title">Property Size</p>
+                                    <div class="filter-selects">
+                                        <div class="filter-selects-item-box">
+                                            <a href="#" class="arr-left"></a>
+                                            <div class="filter-select-item">
+                                                <div class="select-item-text bedroom-icon">
+                                                    <span class="option"></span> Bedroom
+                                                    <select class="hidden" name="bedroom">
+                                                        <option value="1" selected="selected"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </select>
+                                                </div><!-- select-item-text -->
+                                            </div><!-- filter-select-item -->
+                                            <a href="#" class="arr-right"></a>
+                                        </div><!-- class="filter-selects-item-box -->
+                                        <div class="filter-selects-item-box">
+                                            <a href="#" class="arr-left"></a>
+                                            <div class="filter-select-item">
+                                                <div class="select-item-text parking-icon">
+                                                    <span class="option"></span> Parking Space
+                                                    <select class="hidden" name="carpark">
+                                                        <option value="1" selected="selected"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </select>
+                                                </div><!-- select-item-text -->
+                                            </div><!-- filter-selects-item-box -->
+                                            <a href="#" class="arr-right"></a>
+                                        </div>
+                                        <div class="filter-selects-item-box">
+                                            <a href="#" class="arr-left"></a>
+                                            <div class="filter-select-item">
+                                                <div class="select-item-text furnishing-icon">
+                                                    <span class="option">Basic Furnishing</span>
+                                                    <select class="hidden" name="furnishing">
+                                                        <option value="Basic Furnishing"></option>
+                                                        <option value="Partial Furnishing"></option>
+                                                        <option value="Fully Furnishing"></option>
+                                                    </select>
+                                                </div><!-- select-item-text -->
+                                            </div><!-- filter-select-item -->
+                                            <a href="#" class="arr-right"></a>
+                                        </div><!-- filter-selects-item-box -->
+                                        <p class="side__filter-title">Price Range</p>
+                                        <div class="filter-price-range">
+                                            <div class="min-price">RM 
+                                                <div class="amount"></div>
+                                            </div>
+                                            <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
+                                            <input type="hidden" id="minPrice" name="minPrice" value="600">
+                                            <div class="max-price pull-right"><span>RM</span>
+                                                <div class="amount"></div>
+                                            </div>
+                                            <div class="range-box">
+                                                <div class="filter-price-range--ui"></div>
+                                            </div>
+                                        </div>
+                                        <a class="btn reset-filters waves-effect waves-dark">Reset Filters</a>
+                                    </div><!-- filter-selects -->
+                                </form>
+                            </div><!-- side-block -->
+                        </section>
+                        <div id="close">
+                            <div class="filter hidden-lg">
+                                <img src="img/filter.png" alt="Close">
+                            </div>
+                            <!-- <img src="http://ynef.net/portfolio/src/close-button.png" alt="Close" height="64" width="64"/> -->
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-7">
+                                <!--Image Card-->
+                                <div class="card">
+                                    <div class="card-image">
+                                        <div class="view overlay hm-white-slight z-depth-1">
+                                            <img src="img/list-prevew-picture.png" class="img-responsive" alt="">
+                                            <a href="#">
+                                                <div class="mask waves-effect"></div>
+                                            </a>
+                                        </div>
+                                        <div class="card-title">
+                                            <span class="label hot-deal">Hot Deal</span>
+                                            <h5>Taman Equine</h5>
+                                        </div>
+                                    </div><!-- card-image -->
+                                    <div class="card-content">
+                                        <p>
+                                            <span class="card-price">RM 1,350</span>
+                                            <span class="card-price-info small">RM 675 for the first month!</span>
+                                        </p>
+                                        <ul class="card-price-description"> 
+                                            <li>
+                                                <span>750 sqft &#10072;</span>
+                                            </li>
+                                            <li>
+                                                <span>High-Rise &#10072;</span>
+                                            </li>
+                                            <li>
+                                                <span>Fully Furnished</span>
+                                            </li>
+                                        </ul><!-- card-price-description -->
+                                        <ul class="card-price-description card-included-content"> 
+                                            <li>
+                                                <span><img src="img/left-bedroom.png">1 Bedroom</span>
+                                            </li>
+                                            <li>
+                                                <span><img src="img/left-parking-space.png">1 Parking Space</span>
+                                            </li>
+                                            <li>
+                                                <span><img src="img/left-furnishing.png">Partial Furnishing</span>
+                                            </li>
+                                        </ul><!-- card-price-description -->
+                                    </div><!-- card-content -->
+                                    <div class="card-details">
+                                        <h6>Address & Key Information</h6>
+                                        <p>No 33, Jalan Putra Permal 8d, Taman Equine, Seri Kembangan, Selangor</p>
+                                        <p>1450 sqft &#124 Landed &#124 Unfurnished</p>
+                                        <div class="divider"></div>
+                                        <h6>Availability</h6>
+                                        <p>From September 2015, minimum 1 year lease.</p>
+                                        <div class="divider"></div>
+                                        <h6>Description</h6>
+                                        <p>A nice terrace house with a good frontage and blah blah blah...</p>
+                                    </div><!-- card-details -->
+                                </div>
+                                <!--Image Card-->
+                            </div>    
+                        </div>
+                    </div><!-- listing-content-block -->
+                </section>
+            </div>
+        </div>
+        <footer class="padding-block-medium padding-block-sides-midium">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Speedrent</h5>
+                    <p class="speedrent__footer-text">support@speedrent.com<br> +60 1234 5678</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Company</h5>
+                    <ul class="clearfix">
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/about-us/">About Us</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/press-release/">Press</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/blog/">Blog</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/contact-us/">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Product</h5>
+                    <ul class="clearfix">
+                        <li class="speedrent__footer-sub-title">
+                            <a href="speedrent.html">Speedrent</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="speedsign.html">Speedsign</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/terms/">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="padding-block-sides-midium center-block">
+                <span class="copyright">&copy; Speedrent 2016. All images are the property of their respective owners. &shy; &#124 &shy; &shy;<a class="speedrent__footer-sub-title" href="http://speedrent.com/web/terms/">Privacy Policy</a></span>
+            </div>
+        </footer>
+    </div><!-- listing-page -->
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.equalheights.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js/uisearch.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <!-- main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <!-- equal-heights-responsive -->
+    
+
+
+</body>
+
+</html>
