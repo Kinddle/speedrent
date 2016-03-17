@@ -1,12 +1,20 @@
 
 $(document).ready(function () {
+
+	/* sidenav-mobile */
+	$('.simple-menu').sidr();
+
+
+	/* modal */
 	$('#modal-filter').modal('hide');
+
     /* search mobile */
     new UISearch( document.getElementById( 'sb-search' ) );
 
 	$(".card").click(function(){
       window.location=$(this).find("a").attr("href"); return false;
 	});
+
     /* equal-heights-responsive */
     $('.equal-height').equalHeights({
     });

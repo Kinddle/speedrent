@@ -93,6 +93,10 @@ body {
     	@media (max-width: 1169px) { 
     		padding-top: 10px;
     	}
+    	#simple-menu {
+			top: 7px;
+		    left: 20px;
+		}
     	.logo {
     		img {
     			width: 43px;
@@ -657,6 +661,61 @@ input[type="search"].sb-search-input {
 	}
 }
 //filter
+//sidenav mobile
+#simple-menu {
+	top: 7px;
+    left: 20px;
+    font-size: 25px;
+    color: #3f4d65;
+    position: absolute;
+}
+.sidr {
+	background: white !important;
+    color: #8691a5 !important;
+    box-shadow: none !important;
+    .logo {
+    	position: relative !important;
+    	height: 50px !important;
+    	left: 0 !important;
+    	#sidr-close {
+			top: 4px;
+            right: 20px;
+		    font-size: 25px;
+		    color: #3f4d65;
+		    position: absolute;
+		}
+    	.logo-mobile-menu {
+    		height: 50px !important;
+    		line-height: 50px !important;
+    		position: absolute;
+    		.logo-mobile-menu-img {
+    			width: 60% !important;
+    		}
+    	}
+    }
+	ul {
+		li {
+			display: block !important;
+			border: none !important;
+			a {
+                line-height: 33px !important;
+				color: #8691a5 !important;
+				font-size: 17px !important;
+				font-weight: 700 !important;
+				padding: 8px 15px !important;
+			}
+		}
+		.speedrent__footer-sub-title {
+			width: 100%;
+			padding: 10px 0;
+			cursor: pointer;
+		}
+		.speedrent__social-box {
+			padding: 0 15px !important;
+		}
+	}
+}
+//sidenav mobile
 
 .listing-page {
 	overflow: hidden;
@@ -705,6 +764,10 @@ input[type="search"].sb-search-input {
     	@media (max-width: 1169px) {
     		height: 50px;
     	}
+    	#simple-menu {
+    	    top: -15px;
+            left: 20px;
+        }
         .show-when-collapse {
         	@media (max-width: 1169px) { 
         		margin-left: 0;
@@ -924,6 +987,7 @@ input[type="search"].sb-search-input {
 				h6 {
 					color: #a0a0a0;
 					font-weight: 300;
+					font-size: 20px;
 				}
 				p {
 					color: #383836;
@@ -942,6 +1006,74 @@ input[type="search"].sb-search-input {
 		    line-height: 80px;
 		    margin: 0;
 		    padding-left: 20px;
+		}
+	}
+	.furnishing-block {
+		label {
+			font-weight: 300;
+			margin-left: 20px;
+			font-size: 16px;
+		}
+		/* Base for label styling */
+		[type="checkbox"]:not(:checked),
+		[type="checkbox"]:checked {
+		  position: absolute;
+		  left: -9999px;
+		}
+		[type="checkbox"]:not(:checked) + label,
+		[type="checkbox"]:checked + label {
+		  position: relative;
+		  padding: 0 42px;
+		  cursor: pointer;
+		}
+		/* checkbox aspect */
+		[type="checkbox"]:not(:checked) + label:before {
+		  content: '';
+		  position: absolute;
+		  left:0; top: 2px;
+		  width: 20px;
+		  height: 20px;
+		  border: 1px solid #aaa;
+		  background: #f8f8f8;
+		  border-radius: 3px;
+		  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+		}
+		/* checked mark aspect */
+		[type="checkbox"]:checked + label:after {
+		  content: '✓';
+		  position: absolute;
+		  left: 0;
+	      top: 2px;
+		  font-size: 18px;
+		  line-height: 0.8;
+		  color: white;
+		  transition: all .2s;
+		  background-color: #3b99fc;
+		  width: 20px;
+		  height: 20px;
+		  border-radius: 3px;
+		  padding: 2px;
+		}
+		/* checked mark aspect changes */
+		[type="checkbox"]:not(:checked) + label:after {
+		  opacity: 0;
+		  transform: scale(0);
+		}
+		[type="checkbox"]:checked + label:after {
+		  opacity: 1;
+		  transform: scale(1);
+		}
+		/* accessibility */
+		[type="checkbox"]:checked:focus + label:before,
+		[type="checkbox"]:not(:checked):focus + label:before {
+		  &:active {
+		  	background-color: #3b99fc;
+		  }
+		}
+
+		/* hover style just for information */
+		label:hover:before {
+		  border: 1px solid #4778d9!important;
 		}
 	}
 }
