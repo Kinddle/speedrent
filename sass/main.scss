@@ -29,6 +29,17 @@ body {
 		padding: 0 15px;
 	}
 }
+.reset-padding-l-mobile {
+	@media (max-width: 1169px) {
+		padding-left: 0;
+	}
+}
+.bold-text {
+	font-weight: 700;
+}
+.full-width {
+	width: 100%;
+}
 .reset-all-padding {
 	padding: 0;
 }
@@ -974,6 +985,7 @@ input[type="search"].sb-search-input {
 				}
 				.card-included-content {
 					li {
+						line-height: 30px;
 						margin-right: 40px;
 						img {
 							margin: 0 10px 0 0 ;
@@ -988,6 +1000,10 @@ input[type="search"].sb-search-input {
 					color: #a0a0a0;
 					font-weight: 300;
 					font-size: 20px;
+					@media (max-width: 1169px) { 
+						padding-left: 0;
+						margin: 10px 0;
+					}
 				}
 				p {
 					color: #383836;
@@ -1012,7 +1028,10 @@ input[type="search"].sb-search-input {
 		label {
 			font-weight: 300;
 			margin-left: 20px;
-			font-size: 16px;
+			font-size: 14px;
+			@media (max-width: 1169px) {
+				font-size: 12px;
+			}
 		}
 		/* Base for label styling */
 		[type="checkbox"]:not(:checked),
@@ -1023,20 +1042,28 @@ input[type="search"].sb-search-input {
 		[type="checkbox"]:not(:checked) + label,
 		[type="checkbox"]:checked + label {
 		  position: relative;
-		  padding: 0 42px;
+		  padding-left: 40px;
 		  cursor: pointer;
+		  line-height: 30px;
+		  @media (max-width: 1169px) {
+		      margin-left: 0;
+		  }
 		}
 		/* checkbox aspect */
 		[type="checkbox"]:not(:checked) + label:before {
-		  content: '';
+		  content: '✓';
 		  position: absolute;
-		  left:0; top: 2px;
-		  width: 20px;
-		  height: 20px;
-		  border: 1px solid #aaa;
-		  background: #f8f8f8;
-		  border-radius: 3px;
-		  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+		  left: 0;
+	      top: 2px;
+		  font-size: 18px;
+		  line-height: 0.8;
+		  color: white;
+		  transition: all .2s;
+		  background-color: #e9e9e9;
+		  width: 30px;
+		  height: 30px;
+		  border-radius: 25px;
+		  padding: 7px;
 		}
 		/* checked mark aspect */
 		[type="checkbox"]:checked + label:after {
@@ -1048,11 +1075,11 @@ input[type="search"].sb-search-input {
 		  line-height: 0.8;
 		  color: white;
 		  transition: all .2s;
-		  background-color: #3b99fc;
-		  width: 20px;
-		  height: 20px;
-		  border-radius: 3px;
-		  padding: 2px;
+		  background-color: #36AD9A;
+		  width: 30px;
+		  height: 30px;
+		  border-radius: 25px;
+		  padding: 7px;
 		}
 		/* checked mark aspect changes */
 		[type="checkbox"]:not(:checked) + label:after {
@@ -1075,6 +1102,86 @@ input[type="search"].sb-search-input {
 		label:hover:before {
 		  border: 1px solid #4778d9!important;
 		}
+	}
+	.map {
+		background-color: white;
+		h5 {
+			padding: 20px;
+			color: #a0a0a0;
+		}
+		iframe {
+			width: 100%;
+		    height: 200px;
+		    border: none;
+		}
+		.report {
+		    color: #f8b13f;
+		    padding: 20px;
+		    display: block;
+            font-size: 17px;
+		}
+	}
+	.listing-single-side-form {
+        p {
+        	color: #8d8d8d;
+        	font-size: 14px;
+        }
+        input {
+        	border: 1px solid #ccc;
+        	@include border-radius(4px);
+        	height: 34px;
+        	background-color: white;
+        	margin: 10px 0 20px 0;
+        	padding-left: 10px;
+            box-sizing: border-box;
+        }
+        input[type=text]:focus:not([readonly]) {
+        	border: 1px solid #4285F4;
+        }
+        label {
+        	left: 0;
+        	font-size: 13px;
+        	font-weight: 400;
+        }
+        .tenant-select {
+        	margin: 10px 0;
+        	height: 36px;
+        }
+        .tenant-label {
+            position: absolute;
+            top: -14px;
+        }
+        select {
+        	margin-bottom: 30px;
+        }
+        .choice-offer {
+        	margin: 10px 0;
+        	label {
+        		padding: 0 32px;
+        	}
+        }
+        .btn-yellow {
+        	background-color: #fddf00;
+        	color: #333333;
+        	font-weight: 700;
+        	line-height: 40px;
+        	font-size: 18px;
+        	margin-left: 0;
+        	margin-right: 0;
+        }
+        .submit {
+        	margin: 31px 0 0 0;
+            line-height: 27px;
+        }
+	}
+	.chat-btn {
+		img {
+		width: 30px !important;
+	    height: 30px !important;
+	    left: 13px;
+	    position: absolute;
+	    top: 14px;
+	    }
 	}
 }
 

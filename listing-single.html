@@ -23,37 +23,54 @@
     <link href="css/jquery-ui.min.css" rel="stylesheet">
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- sidr -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
 </head>
 
 <body>
     <div class="listing-page listing-page-single">
         <!--Navigation-->
         <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
-            <!--/. SideNav slide-out button -->
-            <!-- <button type="button" class="navbar-toggle collapsed hidden-lg" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse hidden-lg" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" class="waves-effect waves-light">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#" class="waves-effect waves-light">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
+            <a id="simple-menu" class="simple-menu hidden-lg" href="#sidr"><i class="fa fa-bars"></i></a>
+            <div id="sidr" class="sidr-mobile-menu">
+                <div class="logo hidden-lg">
+                    <a class="clearfix" class="logo-mobile-menu" href="home.html">
+                        <img class="img-responsive logo-mobile-menu-img" src="img/speedrent-logo.png" alt="Logo">
+                    </a>
+                    <a id="sidr-close" class="simple-menu hidden-lg" href="/"><i class="fa fa-arrow-left"></i></a>
+                </div>
+                <ul>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/about-us/">About Us</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/press-release/">Press</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/blog/">Blog</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/contact-us/">Contact Us</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="speedrent.html">Speedrent</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="speedsign.html">Speedsign</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/terms/">Terms</a>
                     </li>
                 </ul>
-            </div> --><!-- navbar-collapse -->
+                <div class="speedrent__social-box hidden-lg pull-left">
+                    <a href="https://www.facebook.com/speedrent">
+                        <img class="img-responsive" src="img/fb.png">
+                    </a>
+                    <a href="https://twitter.com/speedrentapp">
+                        <img class="img-responsive" src="img/tw.png">
+                    </a>
+                </div>
+            </div>
             <div class="logo">
                 <a href="home.html">
                     <img class="img-responsive" src="img/logo-house-green.png" alt="Logo">
@@ -68,7 +85,7 @@
                 </form>
             </div>
             <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post a Property</a>
-            <a href="/post" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post</a>
+            <!-- <a href="/post" class="hidden-lg pull-right btn btn-white waves-effect waves-light">Post</a> -->
         </nav><!--/.Navigation-->
         <div class="row reset-all-padding">
             <div class="col-md-12 col-lg-3 border-r-custom reset-padding-r">
@@ -79,97 +96,74 @@
                         </a>
                     </div>
                     <div id="side-block" class="side-block equal-height border-r-custom border-top-bottom-custom clearfix">
-                        <form class="clearfix fixed-form" action="" method="post" name="filters" id="filters">
-                            <p class="side__filter-title">Housing Type</p>
-                            <div class="checkbox-wrap">
-                                <img class="high-rise" src="img/left-high-rise.png">
-                                <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
-                                <label for="high-rise">
-                                    <span>high-rise</span>
-                                </label>
-                            </div><!-- checkbox-wrap -->
-                            <div class="checkbox-wrap">
-                                <img src="img/left-landed.png">
-                                <input type="checkbox" class="filled-in" id="landed" checked="checked" />
-                                <label for="landed">
-                                    <span>Landed</span>
-                                </label>
-                            </div><!-- checkbox-wrap -->
-                            <p class="side__filter-title">Property Size</p>
-                            <div class="filter-selects">
-                                <div class="filter-selects-item-box">
-                                    <a href="#" class="arr-left"></a>
-                                    <div class="filter-select-item">
-                                        <div class="select-item-text bedroom-icon">
-                                            <span class="option"></span> Bedroom
-                                            <select class="hidden" name="bedroom">
-                                                <option value="1" selected="selected"></option>
-                                                <option value="2"></option>
-                                                <option value="3"></option>
-                                                <option value="4"></option>
-                                                <option value="5"></option>
-                                            </select>
-                                        </div><!-- select-item-text -->
-                                    </div><!-- filter-select-item -->
-                                    <a href="#" class="arr-right"></a>
-                                </div><!-- class="filter-selects-item-box -->
-                                <div class="filter-selects-item-box">
-                                    <a href="#" class="arr-left"></a>
-                                    <div class="filter-select-item">
-                                        <div class="select-item-text parking-icon">
-                                            <span class="option"></span> Parking Space
-                                            <select class="hidden" name="carpark">
-                                                <option value="1" selected="selected"></option>
-                                                <option value="2"></option>
-                                                <option value="3"></option>
-                                                <option value="4"></option>
-                                                <option value="5"></option>
-                                            </select>
-                                        </div><!-- select-item-text -->
-                                    </div><!-- filter-selects-item-box -->
-                                    <a href="#" class="arr-right"></a>
+                        <div class="row">
+                            <form class="col-md-12 clearfix fixed-form form-horizontal listing-single-side-form">
+                                <p class="bold-text">To request a chat with the landlord, please give them a better understanding of your offer.</p>
+                                <div class="input-field">
+                                    <input placeholder="E.g. RM 1900" id="budget" type="text" class="validate">
+                                    <label for="budget">What is your budget for this property?</label>
                                 </div>
-                                <div class="filter-selects-item-box">
-                                    <a href="#" class="arr-left"></a>
-                                    <div class="filter-select-item">
-                                        <div class="select-item-text furnishing-icon">
-                                            <span class="option">Basic Furnishing</span>
-                                            <select class="hidden" name="furnishing">
-                                                <option value="Basic Furnishing"></option>
-                                                <option value="Partial Furnishing"></option>
-                                                <option value="Fully Furnishing"></option>
-                                            </select>
-                                        </div><!-- select-item-text -->
-                                    </div><!-- filter-select-item -->
-                                    <a href="#" class="arr-right"></a>
-                                </div><!-- filter-selects-item-box -->
-                                <p class="side__filter-title">Price Range</p>
-                                <div class="filter-price-range">
-                                    <div class="min-price">RM 
-                                        <div class="amount"></div>
-                                    </div>
-                                    <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
-                                    <input type="hidden" id="minPrice" name="minPrice" value="600">
-                                    <div class="max-price pull-right"><span>RM</span>
-                                        <div class="amount"></div>
-                                    </div>
-                                    <div class="range-box">
-                                        <div class="filter-price-range--ui"></div>
-                                    </div>
+                                <label for="nationality">Which nationality are you?</label>
+                                <select class="form-control">
+                                    <option>Malaysian</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <div class="input-field">
+                                    <input placeholder="E.g. Software Developer" id="occupation" type="text" class="validate">
+                                    <label for="occupation">What is your occupation?</label>
                                 </div>
-                                <a class="btn reset-filters waves-effect waves-dark">Reset Filters</a>
-                            </div><!-- filter-selects -->
-                        </form>
+                                <div class="input-field">
+                                    <input placeholder="Speedrent" id="company" type="text" class="validate">
+                                    <label for="company">Which Company / University?</label>
+                                </div>
+                                <div class="input-field col-md-7 reset-padding-l">
+                                    <input placeholder="31 Jan 2015" id="date" type="text" class="validate">
+                                    <label for="date">Move in Date</label>
+                                </div>
+                                <div class="input-field col-md-5 reset-all-padding">
+                                    <!-- <p>No. of Tenants</p> -->
+                                    <label for="tenants" class="tenant-label">No. of Tenants</label>
+                                    <select class="form-control tenant-select col-md-5">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                <label for="requests" class="full-width">Any special requests?</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="choice-offer">
+                                    <input type="checkbox" class="filled-in" id="choice-offer" checked="checked">
+                                    <label for="choice-offer">
+                                        <span>Are you serious about this offer?</span>
+                                    </label>
+                                </div>
+                                <a class="btn btn-yellow full-width waves-effect waves-light">Chat with Landlord</a>
+                                <div class="col-md-7 reset-padding-l">
+                                    <label for="verification">Mobile Verification</label>
+                                    <input placeholder="- - - -" id="verification" type="text" class="validate">
+                                </div>
+                                <div class="col-md-5 reset-padding-l">
+                                    <a class="btn btn-yellow waves-effect waves-light pull-right submit" type="submit">Submit</a>
+                                </div>
+                            </form>
+                        </div>
                     </div><!-- side-block -->
                 </section>
             </div><!-- col-md-12 col-lg-3 -->
             <div class="col-md-9 reset-padding-l">
                 <section>
-                    <div class="search-box search-box-list-single">
+                    <div class="search-box search-box-list-single visible-lg">
                         <a href="listing.html">
                             < Back to Listings </h6>
                         </a>
-                        <div class="speedrent__social-box">
+                        <div class="speedrent__social-box visible-lg">
                             <a href="https://www.facebook.com/speedrent">
                                 <img class="img-responsive" src="img/fb.png">
                             </a>
@@ -181,105 +175,13 @@
                 </section>
                 <section>
                     <div class="listing-content-block equal-height border-top-bottom-custom">
-                        <section id="filter-box" class="hidden-lg">
-                            <div class="logo hidden-lg">
-                                <a class="clearfix" href="home.html">
-                                    <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
-                                </a>
-                            </div>
-                            <div id="side-block" class="side-block equal-height border-r-custom border-top-bottom-custom clearfix">
-                                <form class="clearfix fixed-form" action="" method="post" name="filters" id="filters">
-                                    <p class="side__filter-title">Housing Type</p>
-                                    <div class="checkbox-wrap">
-                                        <img class="high-rise" src="img/left-high-rise.png">
-                                        <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
-                                        <label for="high-rise">
-                                            <span>high-rise</span>
-                                        </label>
-                                    </div><!-- checkbox-wrap -->
-                                    <div class="checkbox-wrap">
-                                        <img src="img/left-landed.png">
-                                        <input type="checkbox" class="filled-in" id="landed" checked="checked" />
-                                        <label for="landed">
-                                            <span>Landed</span>
-                                        </label>
-                                    </div><!-- checkbox-wrap -->
-                                    <p class="side__filter-title">Property Size</p>
-                                    <div class="filter-selects">
-                                        <div class="filter-selects-item-box">
-                                            <a href="#" class="arr-left"></a>
-                                            <div class="filter-select-item">
-                                                <div class="select-item-text bedroom-icon">
-                                                    <span class="option"></span> Bedroom
-                                                    <select class="hidden" name="bedroom">
-                                                        <option value="1" selected="selected"></option>
-                                                        <option value="2"></option>
-                                                        <option value="3"></option>
-                                                        <option value="4"></option>
-                                                        <option value="5"></option>
-                                                    </select>
-                                                </div><!-- select-item-text -->
-                                            </div><!-- filter-select-item -->
-                                            <a href="#" class="arr-right"></a>
-                                        </div><!-- class="filter-selects-item-box -->
-                                        <div class="filter-selects-item-box">
-                                            <a href="#" class="arr-left"></a>
-                                            <div class="filter-select-item">
-                                                <div class="select-item-text parking-icon">
-                                                    <span class="option"></span> Parking Space
-                                                    <select class="hidden" name="carpark">
-                                                        <option value="1" selected="selected"></option>
-                                                        <option value="2"></option>
-                                                        <option value="3"></option>
-                                                        <option value="4"></option>
-                                                        <option value="5"></option>
-                                                    </select>
-                                                </div><!-- select-item-text -->
-                                            </div><!-- filter-selects-item-box -->
-                                            <a href="#" class="arr-right"></a>
-                                        </div>
-                                        <div class="filter-selects-item-box">
-                                            <a href="#" class="arr-left"></a>
-                                            <div class="filter-select-item">
-                                                <div class="select-item-text furnishing-icon">
-                                                    <span class="option">Basic Furnishing</span>
-                                                    <select class="hidden" name="furnishing">
-                                                        <option value="Basic Furnishing"></option>
-                                                        <option value="Partial Furnishing"></option>
-                                                        <option value="Fully Furnishing"></option>
-                                                    </select>
-                                                </div><!-- select-item-text -->
-                                            </div><!-- filter-select-item -->
-                                            <a href="#" class="arr-right"></a>
-                                        </div><!-- filter-selects-item-box -->
-                                        <p class="side__filter-title">Price Range</p>
-                                        <div class="filter-price-range">
-                                            <div class="min-price">RM 
-                                                <div class="amount"></div>
-                                            </div>
-                                            <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
-                                            <input type="hidden" id="minPrice" name="minPrice" value="600">
-                                            <div class="max-price pull-right"><span>RM</span>
-                                                <div class="amount"></div>
-                                            </div>
-                                            <div class="range-box">
-                                                <div class="filter-price-range--ui"></div>
-                                            </div>
-                                        </div>
-                                        <a class="btn reset-filters waves-effect waves-dark">Reset Filters</a>
-                                    </div><!-- filter-selects -->
-                                </form>
-                            </div><!-- side-block -->
-                        </section>
-                        <div id="close">
-                            <div class="filter hidden-lg">
-                                <img src="img/filter.png" alt="Close">
-                            </div>
-                            <!-- <img src="http://ynef.net/portfolio/src/close-button.png" alt="Close" height="64" width="64"/> -->
+                        <div class="search-box-list-single">
+                        <a href="listing.html">
+                            < Back to Listings </h6>
+                        </a>
                         </div>
-                        
                         <div class="row">
-                            <div class="col-md-7">
+                            <div class="col-md-9">
                                 <!--Image Card-->
                                 <div class="card">
                                     <div class="card-image">
@@ -335,95 +237,260 @@
                                         <h6>Furnishing</h6>
                                         <div class="furnishing-block">
                                             <div class="row">
-                                                <form action="#">
-                                                    <div class='col-lg-4'>
+                                                <form action="#" class="clearfix">
+                                                    <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
                                                         <ul>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Air Cond</label>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-1" checked="checked" />
+                                                                <label for="filled-in-1">Air Cond</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Wardrobe
+                                                                <input type="checkbox" class="filled-in" id="filled-in-2" checked="checked" />
+                                                                <label for="filled-in-2">Wardrobe
                                                                 </label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Refrigerator</label>
+                                                                <input type="checkbox" class="filled-in" id="3" checked="checked" />
+                                                                <label for="3">Refrigerator</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Dining Table</label>
+                                                                <input type="checkbox" class="filled-in" id="4" checked="checked" />
+                                                                <label for="4" class="flow-text">Dining Table</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Sofa</label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class='col-lg-4'>
-                                                        <ul>
-                                                            <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Bed Frame</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Curtain</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Microwave</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Hood Hob</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Washing Machine</label>
+                                                                <input type="checkbox" class="filled-in" id="5" checked="checked" />
+                                                                <label for="5">Sofa</label>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class='col-lg-4'>
+                                                    <div class='col-lg-4 col-md-4 col-xs-6  reset-padding-l'>
                                                         <ul>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Mattress</label>
+                                                                <input type="checkbox" class="filled-in" id="6" checked="checked" />
+                                                                <label for="6">Bed Frame</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">TV</label>
+                                                                <input type="checkbox" class="filled-in" id="7" checked="checked" />
+                                                                <label for="7">Curtain</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Kitchen Cabinet</label>
+                                                                <input type="checkbox" class="filled-in" id="8" checked="checked" />
+                                                                <label for="8">Microwave</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Oven</label>
+                                                                <input type="checkbox" class="filled-in" id="9" checked="checked" />
+                                                                <label for="9">Hood Hob</label>
                                                             </li>
                                                             <li>
-                                                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                                                                <label for="filled-in-box">Water Heater</label>
+                                                                <input type="checkbox" class="filled-in" id="10" checked="checked" />
+                                                                <label for="10">Washing Machine</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="11" checked="checked" />
+                                                                <label for="11">Mattress</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="12" checked="checked" />
+                                                                <label for="12">TV</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="13" checked="checked" />
+                                                                <label for="13">Kitchen Cabinet</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="14" checked="checked" />
+                                                                <label for="14">Oven</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="15" checked="checked" />
+                                                                <label for="15">Water Heater</label>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </form>
                                             </div>
-                                        </div>
+                                        </div><!-- furnishing-block -->
+                                        <h6>Facilities</h6>
+                                        <div class="furnishing-block">
+                                            <div class="row">
+                                                <form action="#" class="clearfix">
+                                                    <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-1" checked="checked" />
+                                                                <label for="filled-in-1">Barbeque Area</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-2" checked="checked" />
+                                                                <label for="filled-in-2">Covered Parking
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="3" checked="checked" />
+                                                                <label for="3">Gymnasium</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="4" checked="checked" />
+                                                                <label for="4">Nursery</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="5" checked="checked" />
+                                                                <label for="5">Playground</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="6" checked="checked" />
+                                                                <label for="6">Sauna</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="7" checked="checked" />
+                                                                <label for="7">Badminton Court</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="8" checked="checked" />
+                                                                <label for="8">Swimming Pool</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="9" checked="checked" />
+                                                                <label for="9">24hr Security</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="10" checked="checked" />
+                                                                <label for="10">Nursery</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="11" checked="checked" />
+                                                                <label for="11">Gymnasium</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="12" checked="checked" />
+                                                                <label for="12">Tennis Court</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="13" checked="checked" />
+                                                                <label for="13">Squash Court</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="14" checked="checked" />
+                                                                <label for="14">Mini Mart</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" class="filled-in" id="15" checked="checked" />
+                                                                <label for="15">Laundry Shop</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div><!-- furnishing-block -->
                                     </div><!-- card-details -->
+                                    <div class="map">
+                                        <h5>See on Map</h5>
+                                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDmquiY0MlSJH6uka9vbpSALHCaOP2QjHc&q=<?php echo $rowset['latitude'].",",$rowset['longitude'];?>&zoom=18" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <a href="/" class="report">Report this Listing</a>
+                                    </div><!-- map -->
                                 </div>
                                 <!--Image Card-->
                             </div>    
+                        </div>
+                        <!-- Button trigger modal -->
+                        <a type="button" class="btn-floating btn-large chat-btn filter hidden-lg waves-effect waves-light" data-toggle="modal" data-target="#modal-filter">
+                            <img src="img/chat-mobile-icon.png">
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade hidden-lg" id="modal-filter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="material-icons prefix close-icon">close</i></span></button>
+                                        <h6 id="myModalLabel" class="h5-responsive modal-title">Chat with Landlord</h6>
+                                        <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                                    </div>
+                                    <div class="modal-body">
+                                        <section>
+                                            <div id="side-block" class="side-block clearfix">
+                                                <div class="row">
+                                                    <form class="col-md-12 clearfix form-horizontal listing-single-side-form">
+                                                        <p class="bold-text">To request a chat with the landlord, please give them a better understanding of your offer.</p>
+                                                        <div class="input-field">
+                                                            <input placeholder="E.g. RM 1900" id="budget" type="text" class="validate">
+                                                            <label for="budget">What is your budget for this property?</label>
+                                                        </div>
+                                                        <label for="nationality">Which nationality are you?</label>
+                                                        <select class="form-control">
+                                                            <option>Malaysian</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                        <div class="input-field">
+                                                            <input placeholder="E.g. Software Developer" id="occupation" type="text" class="validate">
+                                                            <label for="occupation">What is your occupation?</label>
+                                                        </div>
+                                                        <div class="input-field">
+                                                            <input placeholder="Speedrent" id="company" type="text" class="validate">
+                                                            <label for="company">Which Company / University?</label>
+                                                        </div>
+                                                        <div class="input-field col-md-7 col-xs-7 reset-padding-l-mobile reset-padding-l">
+                                                            <input placeholder="31 Jan 2015" id="date" type="text" class="validate">
+                                                            <label for="date">Move in Date</label>
+                                                        </div>
+                                                        <div class="input-field col-md-5 col-xs-5 reset-all-padding">
+                                                            <!-- <p>No. of Tenants</p> -->
+                                                            <label for="tenants" class="tenant-label">No. of Tenants</label>
+                                                            <select class="form-control tenant-select col-md-5">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="">
+                                                        <label for="requests" class="full-width">Any special requests?</label>
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                        </div>
+                                                        <div class="choice-offer">
+                                                            <input type="checkbox" class="filled-in" id="choice-offer" checked="checked">
+                                                            <label for="choice-offer">
+                                                                <span>Are you serious about this offer?</span>
+                                                            </label>
+                                                        </div>
+                                                        <a class="btn btn-yellow full-width waves-effect waves-light">Chat with Landlord</a>
+                                                        <div class="col-md-7 col-xs-7 reset-padding-l-mobile reset-padding-l">
+                                                            <label for="verification">Mobile Verification</label>
+                                                            <input placeholder="- - - -" id="verification" type="text" class="validate">
+                                                        </div>
+                                                        <div class="col-md-5 col-xs-5 reset-padding-l-mobile reset-padding-l">
+                                                            <a class="btn btn-yellow waves-effect waves-light pull-right submit" type="submit">Submit</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div><!-- side-block -->
+                                        </section>
+                                    </div>
+                                </div>
+                             </div>
                         </div>
                     </div><!-- listing-content-block -->
                 </section>
             </div>
         </div>
-        <footer class="padding-block-medium padding-block-sides-midium">
+        <footer class="padding-block-medium listing-footer visible-lg">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <h5 class="speedrent__footer-title">Speedrent</h5>
                     <p class="speedrent__footer-text">support@speedrent.com<br> +60 1234 5678</p>
                 </div>
@@ -444,7 +511,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <h5 class="speedrent__footer-title">Product</h5>
                     <ul class="clearfix">
                         <li class="speedrent__footer-sub-title">
@@ -473,6 +540,8 @@
     <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
     <script type="text/javascript" src="js/uisearch.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
     <!-- Bootstrap core JavaScript -->
@@ -483,9 +552,6 @@
     <!-- main.js -->
     <script type="text/javascript" src="js/main.js"></script>
     
-    <!-- equal-heights-responsive -->
-    
-
 
 </body>
 
