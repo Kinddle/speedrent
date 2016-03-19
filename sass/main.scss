@@ -39,6 +39,9 @@ body {
 		padding: 0;
 	}
 }
+.top-margin-small {
+	margin-top: 15px;
+}
 .bold-text {
 	font-weight: 700;
 }
@@ -1210,12 +1213,12 @@ input[type="search"].sb-search-input {
         }
         .logo-mobile  {
         	position: absolute;
-            left: 41%;
+            left: 44%;
             height: 50px;
             display: inline-block; 
             top: 3px;
             img {
-            	width: 38%;
+            	width: 40%;
                 margin-left: 20px;
             }
         }
@@ -1239,6 +1242,7 @@ input[type="search"].sb-search-input {
     	box-shadow: none;
     }
     .top-nav-collapse {
+    	height: 50px;
     	.back-btn {
         	line-height: 28px;
         	color: #4fbaab;
@@ -1306,10 +1310,10 @@ input[type="search"].sb-search-input {
 			border: 1px solid #d8d8d8;
             overflow: hidden;
             list-style: none;
-            margin: 0 auto;
             border-radius: 10px;
             height: 66px;
             background-color: white;
+            margin-bottom: 20px;
 			li {
 				float: left;
 				width: 33.3% !important;
@@ -1334,6 +1338,7 @@ input[type="search"].sb-search-input {
 					outline: none;
 					font-size: 13px;
 					line-height: 38px;
+					font-weight: 700;
 					&:after {
 						content: " "; 
 						display: block; 
@@ -1390,48 +1395,6 @@ input[type="search"].sb-search-input {
 				}
 			}
 		}
-		//colors
-// $color_meteor_approx: hsla(34,85%,45%,1);
-// $color_fire_bush_approx: hsla(34,85%,55%,1);
-// $color_casablanca_approx: hsla(34,85%,65%,1);
-// $color_chardonnay_approx: hsla(34,85%,75%,1);
-// $black: black;
-
-// ul li {
-// 	&:first-child a {
-// 		padding-left: 10px;
-// 	}
-// 	&:nth-child(2) a {
-// 		background: $color_meteor_approx;
-// 		&:after {
-// 			border-left-color: $color_meteor_approx;
-// 		}
-// 	}
-// 	&:nth-child(3) a {
-// 		background: $color_fire_bush_approx;
-// 		&:after {
-// 			border-left-color: $color_fire_bush_approx;
-// 		}
-// 	}
-// 	&:nth-child(4) a {
-// 		background: $color_casablanca_approx;
-// 		&:after {
-// 			border-left-color: $color_casablanca_approx;
-// 		}
-// 	}
-// 	&:nth-child(5) a {
-// 		background: $color_chardonnay_approx;
-// 		&:after {
-// 			border-left-color: $color_chardonnay_approx;
-// 		}
-// 	}
-// 	&:last-child a {
-// 		background: transparent !important;
-// 		color: $black;
-// 		pointer-events: none;
-// 		cursor: default;
-// 	}
-// }
         .current, .done {
             background: #fddf00 !important;
             a {
@@ -1752,6 +1715,55 @@ input[type="search"].sb-search-input {
     }
 }
 //post
+
+// post thank you
+#post-thank-you {
+    background-color: #f9f9f9;
+}
+.post-thank-you {
+	.empty-header {
+		height: 90px;
+		background-color: white;
+		margin-bottom: 50px;
+		@media (max-width: 1169px) {
+			height: 70px;
+		}
+	}
+	.divider {
+		border-top: 1px solid #dddddd;
+	    width: 50%;
+	    margin: 0 auto;
+	}
+	h1 {
+		color: #4abbab;
+		font-weight: 400;
+	}
+	h4 {
+		color: #8d8d8d;
+	}
+	.btn-facebook {
+		background-color: #3a5ba2;
+		color: white;
+		text-transform: uppercase;
+		padding: 5px 60px;
+		@include border-radius(3px);
+		.fa-facebook {
+			margin-right: 5px;
+		}
+	}
+	ul {
+		overflow: hidden;
+		li {
+			display: inline-block;
+			float: left;
+			width: 50%;
+			text-align: center;
+			padding: 0 20px;
+		}
+	}
+}
+
+// post thank you
 
 
 
