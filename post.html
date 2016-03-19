@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design for Bootstrap</title>
+
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
+    <!-- Main.css -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- sidr -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
+</head>
+
+<body>
+    <div class="post">
+        <!--Navigation-->
+        <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+            <a href="home.html" class="hidden-lg back-btn">Cencel</a>
+            <!-- <a id="simple-menu" class="simple-menu hidden-lg" href="#sidr"><i class="fa fa-bars"></i></a> -->
+            <!-- <div id="sidr" class="sidr-mobile-menu">
+                <div class="logo hidden-lg">
+                    <a class="clearfix" class="logo-mobile-menu" href="home.html">
+                        <img class="img-responsive logo-mobile-menu-img" src="img/speedrent-logo.png" alt="Logo">
+                    </a>
+                    <a id="sidr-close" class="simple-menu hidden-lg" href="/"><i class="fa fa-arrow-left"></i></a>
+                </div>
+                <ul>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/about-us/">About Us</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/press-release/">Press</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/blog/">Blog</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/contact-us/">Contact Us</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="speedrent.html">Speedrent</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="speedsign.html">Speedsign</a>
+                    </li>
+                    <li class="speedrent__footer-sub-title">
+                        <a href="http://speedrent.com/web/terms/">Terms</a>
+                    </li>
+                </ul>
+                <div class="speedrent__social-box hidden-lg pull-left">
+                    <a href="https://www.facebook.com/speedrent">
+                        <img class="img-responsive" src="img/fb.png">
+                    </a>
+                    <a href="https://twitter.com/speedrentapp">
+                        <img class="img-responsive" src="img/tw.png">
+                    </a>
+                </div>
+            </div> -->
+            <div class="logo logo-desktop visible-lg">
+                <a href="home.html">
+                    <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="logo logo-mobile hidden-lg">
+                <a href="home.html">
+                    <img class="img-responsive" src="img/logo-house-green.png" alt="Logo">
+                </a>
+            </div>
+            <div class="speedrent__social-box pull-right visible-lg">
+                <a href="https://www.facebook.com/speedrent">
+                    <img class="img-responsive" src="img/fb.png">
+                </a>
+                <a href="https://twitter.com/speedrentapp">
+                    <img class="img-responsive" src="img/tw.png">
+                </a>
+            </div>
+            <!-- <div id="sb-search" class="sb-search hidden-lg">
+                <form>
+                    <input class="sb-search-input" placeholder="Search" type="search" value="" name="search" id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"><i class="material-icons prefix search-icon">search</i></span>
+                    <span class="sb-icon-close"><i class="material-icons prefix close-icon">close</i></span>
+                </form>
+            </div>
+             -->
+            <!-- <a href="post.html" class="visible-lg pull-right btn btn-white waves-effect waves-light">Post a Property</a> -->
+            <!-- <a href="post.html" class="hidden-lg pull-right btn btn-white waves-effect waves-light">Post</a> -->
+        </nav><!--/.Navigation-->
+        <header>
+            <!-- <div class="row reset-all-padding">
+                <div class="col-md-12 col-lg-3">
+                    <section class="visible-lg">
+                        <div class="logo visible-lg">
+                            <a class="clearfix" href="home.html">
+                                <img class="img-responsive" src="img/speedrent-logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div> -->
+        </header>
+        <section class="post-steps">
+            <div class="container">
+                <div id="steps-basic">
+                    <h3>Create</h3>
+                    <section class="create-section">
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-1">
+                                <h6 class="bold-text h5-responsive">List Your Property for Rent</h6>
+                                <p class="side__filter-title">Housing Type</p>
+                                <div class="checkbox-wrap">
+                                    <img class="high-rise" src="img/left-high-rise.png">
+                                    <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
+                                    <label for="high-rise">
+                                        <span>high-rise</span>
+                                    </label>
+                                </div><!-- checkbox-wrap -->
+                                <div class="checkbox-wrap">
+                                    <img src="img/left-landed.png">
+                                    <input type="checkbox" class="filled-in" id="landed" checked="checked" />
+                                    <label for="landed">
+                                        <span>Landed</span>
+                                    </label>
+                                </div><!-- checkbox-wrap -->
+                                <p class="side__filter-title">Property Details</p>
+                                <div class="row">
+                                <div class="input-field col-lg-10 col-xs-12">
+                                    <input placeholder="Name of Condo" id="title" type="text" class="validate">
+                                    <label for="title">Title</label>
+                                </div>
+                                <div class="input-field col-lg-10 col-xs-12">
+                                    <input placeholder="Stated Address" id="address" type="text" class="validate">
+                                    <label for="address">Address</label>
+                                </div>
+                                <div class="input-field col-lg-5 col-xs-6">
+                                    <input placeholder="#00-00" id="unit-no" type="text" class="validate">
+                                    <label for="unit-no">Unit No.</label>
+                                </div>
+                                <div class="input-field col-lg-5 col-xs-6">
+                                    <input placeholder="000000" id="post-code" type="text" class="validate">
+                                    <label for="post-code">Post Code</label>
+                                </div>
+                                <div class="input-field col-lg-10 col-xs-12">
+                                    <input placeholder="1000" id="build-up" type="text" class="validate">
+                                    <span>sqft</span>
+                                    <label for="build-up">Build-up</label>
+                                </div>
+                                <div class="input-field col-lg-10 col-xs-12">
+                                    <input placeholder="1000" id="asking-price" type="text" class="validate">
+                                    <span>/mth</span>
+                                    <label for="asking-price">Asking Price (RM)</label>
+                                </div> 
+                                </div>     
+                            </div>
+                            <div class="col-lg-5 reset-all-padding-mobile">
+                                <div class="discount">
+                                    <p>You agree to a 50% first month discount for tenants. This is now standard for posting on Speedrent.</p>
+                                    <a href="/" class="text-right">learn more ></a>
+                                </div>
+                                <div class="steps-filter-selects">
+                                    <p class="side__filter-title">Property Size</p>
+                                    <div class="filter-selects">
+                                        <div class="filter-selects-item-box">
+                                            <a href="#" class="arr-left"></a>
+                                            <div class="filter-select-item">
+                                                <div class="select-item-text bedroom-icon">
+                                                    <span class="option"></span> Bedroom
+                                                    <select class="hidden" name="bedroom">
+                                                        <option value="1" selected="selected"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </select>
+                                                </div><!-- select-item-text -->
+                                            </div><!-- filter-select-item -->
+                                            <a href="#" class="arr-right"></a>
+                                        </div><!-- class="filter-selects-item-box -->
+                                        <div class="filter-selects-item-box">
+                                            <a href="#" class="arr-left"></a>
+                                            <div class="filter-select-item">
+                                                <div class="select-item-text parking-icon">
+                                                    <span class="option"></span> Parking Space
+                                                    <select class="hidden" name="carpark">
+                                                        <option value="1" selected="selected"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </select>
+                                                </div><!-- select-item-text -->
+                                            </div><!-- filter-selects-item-box -->
+                                            <a href="#" class="arr-right"></a>
+                                        </div>
+                                        <div class="filter-selects-item-box">
+                                            <a href="#" class="arr-left"></a>
+                                            <div class="filter-select-item">
+                                                <div class="select-item-text furnishing-icon">
+                                                    <span class="option">Basic Furnishing</span>
+                                                    <select class="hidden" name="furnishing">
+                                                        <option value="Basic Furnishing"></option>
+                                                        <option value="Partial Furnishing"></option>
+                                                        <option value="Fully Furnishing"></option>
+                                                    </select>
+                                                </div><!-- select-item-text -->
+                                            </div><!-- filter-select-item -->
+                                            <a href="#" class="arr-right"></a>
+                                        </div><!-- filter-selects-item-box -->
+                                    </div><!-- filter-selects -->
+                                </div><!-- steps-filter-selects -->
+                            </div>
+                        </div>
+                    </section>
+                    <h3>Photos</h3>
+                    <section>
+                        <h6 class="h5-responsive"><span class='bold-text'>Upload Your Photos</span> &shy;<span class="text-md-size">minimum 4</span></h6>
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <form>
+                                    <ul class="upload-files">
+                                        <li class="upload-item">
+                                            <label for="upload-file-1">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-1">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-2">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-2">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-3">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-3">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-4">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-4">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-5">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-5">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-6">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-6">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-7">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-7">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-8">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-8">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-9">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-9">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-10">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-10">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-11">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-11">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-12">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-12">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-13">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-13">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-14">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-14">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-15">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-15">
+                                        </li>
+                                        <li class="upload-item">
+                                            <label for="upload-file-16">
+                                                <img src="img/logo-house-green.png">
+                                            </label>
+                                            <input type="file" id="upload-file-16">
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="photo-guide-box">
+                                    <h6>Just a Checklist</h6>
+                                    <p>Photo Guidelines:</p>
+                                    <ul>
+                                        <li>
+                                            <img src="img/photo-guide-wm-icon.png">
+                                            <p>No watermark</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/photo-guide-interior-icon.png">
+                                            <p>Minimum 4 interior<br>photos</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/photo-guide-hd-icon.png">
+                                            <p>HD quality photos</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <h3>Extra Info</h3>
+                    <section class="extra-info">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h6 class="h5-responsive bold-text">Extra Information</h6>
+                                <p class="side__filter-title">Rental Deposit <span class="label label-benefit">New Benefit</span></p>
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="filled-in" id="deposit" checked="checked" />
+                                    <label for="deposit">
+                                        <span>Usual Deposit</span>
+                                    </label>
+                                </div><!-- checkbox-wrap -->
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox" class="filled-in" id="guarantee" checked="checked" />
+                                    <label for="guarantee">
+                                        <span>Rental Guarantee</span>
+                                    </label>
+                                </div><!-- checkbox-wrap -->
+                                <p class="sub-title">You may select either one or both</p>
+                                <div class="row">
+                                    <div class="input-field col-lg-6 col-xs-6">
+                                        <label for="security-deposit" class="extra-info-select">Security Deposit</label>
+                                        <select class="form-control col-lg-6">
+                                            <option>1 Month</option>
+                                            <option>2 Month</option>
+                                            <option>3 Month</option>
+                                            <option>4 Month</option>
+                                            <option>5 Month</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field col-lg-6 col-xs-6">
+                                        <input placeholder="3000" id="security-deposit" type="text" class="validate">
+                                        <label for="security-deposit">Amount</label>
+                                    </div>
+                                    <div class="input-field col-lg-6 col-xs-6">
+                                        <label for="utilities-deposit" class="extra-info-select">Utilities Deposit</label>
+                                        <select class="form-control col-lg-6">
+                                            <option>1 Month</option>
+                                            <option>2 Month</option>
+                                            <option>3 Month</option>
+                                            <option>4 Month</option>
+                                            <option>5 Month</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field col-lg-6 col-xs-6">
+                                        <input placeholder="1500" id="utilities-deposit" type="text" class="validate">
+                                        <label for="utilities-deposit">Amount</label>
+                                    </div>
+                                    <div class="guarantee">
+                                        <h6>
+                                            <span><img src="img/guarantee-icon.png"></span>
+                                            Speedrent Rental Guarantee Scheme</h6>
+                                        <span>Guaranteed on time payment should the tenant be late in payment for the month up to a total of 3 months, on time, every time.</span>
+                                        <a href="/" class="pull-right learn-more">Learn More ></a>
+                                    </div>
+                                    <div class="input-field col-lg-6 col-xs-6">
+                                        <input placeholder="21 Jan 2016" id="date" type="text" class="validate">
+                                        <label for="date">Availability date for rent</label>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-1 reset-all-padding-mobile">
+                                <div class="row">
+                                    <label for="description" class="full-width">Description</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="furnishing-block">
+                                    <h6>Furnishing</h6>
+                                    <div class="row">
+                                        <form action="#" class="clearfix">
+                                            <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-1" checked="checked" />
+                                                        <label for="filled-in-1">Air Cond</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-2" checked="checked" />
+                                                        <label for="filled-in-2">Wardrobe
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-3" checked="checked" />
+                                                        <label for="filled-in-3">Refrigerator</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-4" checked="checked" />
+                                                        <label for="filled-in-4">Dining Table</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-5" checked="checked" />
+                                                        <label for="filled-in-5">Sofa</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='col-lg-4 col-md-4 col-xs-6  reset-padding-l'>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-6" checked="checked" />
+                                                        <label for="filled-in-6">Bed Frame</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-7" checked="checked" />
+                                                        <label for="filled-in-7">Curtain</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-8" checked="checked" />
+                                                        <label for="filled-in-8">Microwave</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-9" checked="checked" />
+                                                        <label for="filled-in-9">Hood Hob</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-10" checked="checked" />
+                                                        <label for="filled-in-10">Washing Machine</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-11" checked="checked" />
+                                                        <label for="filled-in-11">Mattress</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-12" checked="checked" />
+                                                        <label for="filled-in-12">TV</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-13" checked="checked" />
+                                                        <label for="filled-in-13">Kitchen Cabinet</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-14" checked="checked" />
+                                                        <label for="filled-in-14">Oven</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-15" checked="checked" />
+                                                        <label for="filled-in-15">Water Heater</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div><!-- furnishing-block -->
+                                <div class="furnishing-block">
+                                    <h6>Facilities</h6>
+                                    <div class="row">
+                                        <form action="#" class="clearfix form-horisontal">
+                                            <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-16" checked="checked" />
+                                                        <label for="filled-in-16">Barbeque Area</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-17" checked="checked" />
+                                                        <label for="filled-in-17">Covered Parking
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-18" checked="checked" />
+                                                        <label for="filled-in-18">Gymnasium</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-19" checked="checked" />
+                                                        <label for="filled-in-19">Nursery</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-20" checked="checked" />
+                                                        <label for="filled-in-20">Playground</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-21" checked="checked" />
+                                                        <label for="filled-in-21">Sauna</label>
+                                                    </li>
+                                                    <li>
+                                                       <input type="checkbox" class="filled-in" id="filled-in-22" checked="checked" />
+                                                        <label for="filled-in-22">Badminton Court</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-23" checked="checked" />
+                                                        <label for="filled-in-23">Swimming Pool</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-24" checked="checked" />
+                                                        <label for="filled-in-24">24hr Security</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-25" checked="checked" />
+                                                        <label for="filled-in-25">Nursery</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='col-lg-4 col-md-4 col-xs-6 reset-padding-l'>
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-26" checked="checked" />
+                                                        <label for="filled-in-26">Gymnasium</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-27" checked="checked" />
+                                                        <label for="filled-in-27">Tennis Court</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-28" checked="checked" />
+                                                        <label for="filled-in-28">Squash Court</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-29" checked="checked" />
+                                                        <label for="filled-in-29">Mini Mart</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" class="filled-in" id="filled-in-30" checked="checked" />
+                                                        <label for="filled-in-30">Laundry Shop</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form> 
+                                    </div>
+                                </div><!-- furnishing-block -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <footer class="padding-block-medium listing-footer visible-lg">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5 class="speedrent__footer-title">Speedrent</h5>
+                    <p class="speedrent__footer-text">support@speedrent.com<br> +60 1234 5678</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="speedrent__footer-title">Company</h5>
+                    <ul class="clearfix">
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/about-us/">About Us</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/press-release/">Press</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/blog/">Blog</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/contact-us/">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="speedrent__footer-title">Product</h5>
+                    <ul class="clearfix">
+                        <li class="speedrent__footer-sub-title">
+                            <a href="speedrent.html">Speedrent</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="speedsign.html">Speedsign</a>
+                        </li>
+                        <li class="speedrent__footer-sub-title">
+                            <a href="http://speedrent.com/web/terms/">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="padding-block-sides-midium center-block">
+                <span class="copyright">&copy; Speedrent 2016. All images are the property of their respective owners. &shy; &#124 &shy; &shy;<a class="speedrent__footer-sub-title" href="http://speedrent.com/web/terms/">Privacy Policy</a></span>
+            </div>
+        </footer>
+    </div><!-- listing-page -->
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.equalheights.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js/uisearch.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <!-- jquery.steps -->
+    <script type="text/javascript" src="js/jquery.steps.min.js"></script>
+    <!-- main.js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    
+
+</body>
+
+</html>

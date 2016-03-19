@@ -1,6 +1,29 @@
 
 $(document).ready(function () {
-   
+    $("#steps-basic").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "slideLeft",
+    autoFocus: false,
+    // Disables the finish button (required if pagination is enabled)
+    enableFinishButton: false,
+    // Disables the next and previous buttons (optional)
+    enablePagination: true,
+    // Enables all steps from the begining
+    enableAllSteps: true,
+    // Removes the number from the title
+    //titleTemplate: "#title#"
+});
+	// var viewportWidth = $(window).width();
+	// $(".control-group").css("width", viewportWidth);
+	// $(".step").css("width", viewportWidth);
+	/* steps*/
+    // $('#steps').easyWizard({
+    //   'prevButton' : 'Back',
+    //    'nextButton' : 'Continue',
+    //    'submitButtonText' : 'Done',
+    // });
+
 	/* sidenav-mobile */
 	$('.simple-menu').sidr();
 
