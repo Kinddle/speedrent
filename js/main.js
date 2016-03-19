@@ -1,28 +1,52 @@
 
 $(document).ready(function () {
+    // var form = $("#form").show();
+
     $("#steps-basic").steps({
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
     autoFocus: false,
     // Disables the finish button (required if pagination is enabled)
-    enableFinishButton: false,
+    enableFinishButton: true,
     // Disables the next and previous buttons (optional)
     enablePagination: true,
     // Enables all steps from the begining
-    enableAllSteps: true,
+    enableAllSteps: false,
     // Removes the number from the title
-    //titleTemplate: "#title#"
+    titleTemplate : '<span class="number">#index#.</span> #title#',
+    // actionContainerTag: "div",
+    // current: "current step:", // This label is important for accessability reasons.
+    labels: {
+        // cancel: "Cancel",
+        // current: "current step:",
+        pagination: "Pagination",
+        finish: "Finish",
+        next: "Continue",
+        previous: "Back",
+        loading: "Loading ..."
+    },
+
+    onStepChanging: function (event, currentIndex, newIndex)
+    {
+        // $(.)
+        // form.validate().settings.ignore = ":disabled,:hidden";
+        // return form.valid();
+        return true;
+    },
+    // onFinishing: function (event, currentIndex)
+    // {
+    //     // form.validate().settings.ignore = ":disabled";
+    //     // return form.valid();
+    // },
+    // onFinished: function (event, currentIndex)
+    // {
+    //     // alert("Submitted!");
+    // }
 });
 	// var viewportWidth = $(window).width();
 	// $(".control-group").css("width", viewportWidth);
 	// $(".step").css("width", viewportWidth);
-	/* steps*/
-    // $('#steps').easyWizard({
-    //   'prevButton' : 'Back',
-    //    'nextButton' : 'Continue',
-    //    'submitButtonText' : 'Done',
-    // });
 
 	/* sidenav-mobile */
 	$('.simple-menu').sidr();

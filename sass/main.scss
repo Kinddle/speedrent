@@ -1265,6 +1265,40 @@ input[type="search"].sb-search-input {
 			padding: 0;
 		}
 	}
+	.wizard {
+	  padding: 10px;
+	  .title {
+	    display: none;
+	  }
+    .actions {
+      margin-top: 20px;
+      ul {
+        overflow: hidden;
+      }
+      .disabled {
+        display: none;
+      }
+      li {
+        text-align: center;
+        width: 50%;
+        float: left;
+        padding: 0 5px;
+        a {
+            margin-bottom: 20px;
+            line-height: 40px;
+            display: inline-block;
+            color: #333333;
+            font-weight: 700;
+            font-size: 20px;
+            @include border-radius(3px);
+            padding: 10px 20px;
+            border: none;
+            background-color: #fddf00;
+            width: 100%
+        }
+      }
+    }
+	}
 	.steps {
 		margin-top: 10px;
 		padding: 0 5px;
@@ -1279,9 +1313,10 @@ input[type="search"].sb-search-input {
 			li {
 				float: left;
 				width: 33.3% !important;
-				text-align: center;
+				text-align: right;
 				border-width: 0;
 				border-radius: 0;
+				line-height: 38px;
 				a {
 					color: white;
 					text-decoration: none; 
@@ -1297,6 +1332,8 @@ input[type="search"].sb-search-input {
 					color: #3f4d65;
 					text-transform: uppercase;
 					outline: none;
+					font-size: 13px;
+					line-height: 38px;
 					&:after {
 						content: " "; 
 						display: block; 
@@ -1308,7 +1345,7 @@ input[type="search"].sb-search-input {
 						position: absolute;
 						top: 50%;
 						margin-top: -49px; 
-						margin-left: 2px;
+						margin-left: 1px;
 						left: 100%;
 						z-index: 1;
 					}
@@ -1396,6 +1433,7 @@ input[type="search"].sb-search-input {
 // 	}
 // }
         .current, .done {
+            background: #fddf00 !important;
             a {
                 background: #fddf00 !important;
                 .current-info {
@@ -1406,9 +1444,6 @@ input[type="search"].sb-search-input {
         .disabled, .disabled.last {
         	a {
         	    background: white !important;
-        	    span {
-                	display: none;
-                }
         	}
         }
 	}
