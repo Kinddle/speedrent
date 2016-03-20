@@ -1347,7 +1347,7 @@ input[type="search"].sb-search-input {
 /* line 1042, ../sass/main.scss */
 .listing-page-single .listing-content-block .card .card-title {
   width: inherit;
-  bottom: -84px;
+  bottom: -55px;
   left: -190px;
   text-align: left;
 }
