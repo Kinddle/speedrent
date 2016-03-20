@@ -1039,6 +1039,12 @@ input[type="search"].sb-search-input {
 					}
 				}
 			}
+			.card-title {
+				width: inherit;
+				bottom: -84px;
+                left: -190px;
+                text-align: left;
+			}
 		}
 		.card-details {
 				padding: 0 20px;
