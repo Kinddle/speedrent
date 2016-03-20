@@ -547,7 +547,7 @@ input[type="search"].sb-search-input {
 	padding: 0;
 }
 .modal-dialog {
-	margin: 0;
+	margin: 0 auto;
 }
 .modal-content {
 	height: 100%;
@@ -634,10 +634,33 @@ input[type="search"].sb-search-input {
     .filter-price-range {
     	.min-price, .max-price {
     		font-size: 1.25em;
-            display: inline-flex;
+    		position: absolute;	
+    		position: relative;
+            display: inline-block;
             .amount {
             	margin-left: 5px;
             }
+    	}
+    	.min-price {
+    		 left: 0;
+    		&:before {
+    			position: absolute;
+    			content: 'RM';
+    			left: 0;
+    		}
+    		.amount {
+    		    padding-left: 30px;
+    	    }
+    	}
+    	.max-price {
+    		right: 0;
+    		&:before {
+    			position: absolute;
+    			content: 'RM';
+    			left: -4px;
+    		}
+    		.amount {
+    		padding-left: 25px;}
     	}
     	.ui-slider {
 		    background-color: #d2d2d2;
@@ -698,9 +721,9 @@ input[type="search"].sb-search-input {
     	height: 50px !important;
     	left: 0 !important;
     	#sidr-close {
-			top: 4px;
+			top: 0;
             right: 20px;
-		    font-size: 25px;
+		    font-size: 18px;
 		    color: #3f4d65;
 		    position: absolute;
 		}
@@ -721,18 +744,23 @@ input[type="search"].sb-search-input {
                 line-height: 33px !important;
 				color: #8691a5 !important;
 				font-size: 17px !important;
-				font-weight: 700 !important;
+				font-weight: 400 !important;
 				padding: 8px 15px !important;
 			}
 		}
 		.speedrent__footer-sub-title {
 			width: 100%;
-			padding: 10px 0;
+			// padding: 10px 0;
 			cursor: pointer;
 		}
 	}
 	.speedrent__social-box {
 			padding: 0 15px !important;
+			overflow: hidden;
+			img {
+				height: 27px !important;
+				margin: 0 20px 0 0;
+			}
 		}
 }
 //sidenav mobile
@@ -761,6 +789,7 @@ input[type="search"].sb-search-input {
 	        		@media (max-width: 1169px) {
 	        			width: 38%;
 	        		}
+
 	        	}
 	        }
 	    }
@@ -853,9 +882,11 @@ input[type="search"].sb-search-input {
     	}
     	.material-icons.prefix {
     		top: 11px;
+    		left: 30px;
     	}
     	.input-field {
     		label {
+    			left: 25px;
                 &.active {
     			color: #3b99fc;
     		    }
@@ -905,6 +936,7 @@ input[type="search"].sb-search-input {
     	.card {
     		cursor: pointer;
     		box-shadow: none;
+    		overflow: visible;
     	}
     	.card-image {
     		position: relative;
@@ -940,6 +972,7 @@ input[type="search"].sb-search-input {
     		}
     	}
     	.card-content {
+    		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     		.card-price {
                 font-weight: 700;
     		}

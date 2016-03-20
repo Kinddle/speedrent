@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Design for Bootstrap</title>
+    <title>listing page</title>
 
     <!-- Material Design Icons -->
-    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             <div id="sidr" class="sidr-mobile-menu">
                 <div class="logo hidden-lg">
                     <a class="clearfix" class="logo-mobile-menu" href="home.html">
-                        <img class="img-responsive logo-mobile-menu-img" src="img/speedrent-logo.png" alt="Logo">
+                        <img class="logo-mobile-menu-img" src="img/speedrent-logo.png" alt="Logo">
                     </a>
                     <a id="sidr-close" class="simple-menu hidden-lg" href="/"><i class="fa fa-arrow-left"></i></a>
                 </div>
@@ -99,14 +99,14 @@
                     <div id="side-block" class="side-block equal-height border-r-custom border-top-bottom-custom clearfix">
                         <form class="clearfix fixed-form" action="" method="post" name="filters" id="filters">
                             <p class="side__filter-title">Housing Type</p>
-                            <div class="checkbox-wrap">
+                            <div class="checkbox-wrap top-margin-small">
                                 <img class="high-rise" src="img/left-high-rise.png">
                                 <input type="checkbox" class="filled-in" id="high-rise" checked="checked" />
                                 <label for="high-rise">
                                     <span>high-rise</span>
                                 </label>
                             </div><!-- checkbox-wrap -->
-                            <div class="checkbox-wrap">
+                            <div class="checkbox-wrap top-margin-small">
                                 <img src="img/left-landed.png">
                                 <input type="checkbox" class="filled-in" id="landed" checked="checked" />
                                 <label for="landed">
@@ -163,12 +163,12 @@
                                 </div><!-- filter-selects-item-box -->
                                 <p class="side__filter-title">Price Range</p>
                                 <div class="filter-price-range">
-                                    <div class="min-price">RM 
+                                    <div class="min-price">
                                         <div class="amount"></div>
                                     </div>
                                     <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
                                     <input type="hidden" id="minPrice" name="minPrice" value="600">
-                                    <div class="max-price pull-right"><span>RM</span>
+                                    <div class="max-price pull-right">
                                         <div class="amount"></div>
                                     </div>
                                     <div class="range-box">
@@ -181,7 +181,7 @@
                     </div><!-- side-block -->
                 </section>
             </div><!-- col-md-12 col-lg-3 -->
-            <div class="col-md-9 reset-padding-l">
+            <div class="col-md-12 col-lg-9 reset-padding-l">
                 <section>
                     <div class="search-box visible-lg">
                         <div class="row">
@@ -211,7 +211,7 @@
                             <section id="" class='hidden-lg'>
                                 <h6 class="h5-responsive">Search Results for <span>Bukit Jalil (2)</span></h6>
                                 <div class="row">
-                                    <div class="col-md-5">
+                                    <div class="col-lg-5 col-md-12">
                                         <!--Image Card-->
                                         <div onclick="location.href='/'" class="card">
                                             <div class="card-image">
@@ -257,7 +257,7 @@
                                         </div>
                                         <!--Image Card-->
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-lg-5 col-md-12">
                                         <!--Image Card-->
                                         <div onclick="location.href='/'" class="card">
                                             <div class="card-image">
@@ -305,7 +305,7 @@
                                 </div>
                                 <h6 class="h5-responsive">The following results are properties nearby <span>Bukit Jalil (1)</span></h6>
                                 <div class="row">
-                                    <div class="col-md-5">
+                                    <div class="col-lg-5 col-md-12">
                                         <!--Image Card-->
                                         <div onclick="location.href='/'" class="card">
                                             <div class="card-image">
@@ -436,12 +436,12 @@
                                                         </div><!-- filter-selects-item-box -->
                                                         <p class="side__filter-title">Price Range</p>
                                                         <div class="filter-price-range">
-                                                            <div class="min-price">RM 
+                                                            <div class="min-price">
                                                                 <div class="amount"></div>
                                                             </div>
                                                             <input type="hidden" id="maxPrice" name="maxPrice" value="3500">
                                                             <input type="hidden" id="minPrice" name="minPrice" value="600">
-                                                            <div class="max-price pull-right"><span>RM</span>
+                                                            <div class="max-price pull-right">
                                                                 <div class="amount"></div>
                                                             </div>
                                                             <div class="range-box">
@@ -459,9 +459,9 @@
                         </div>      
                         <h6 class="h5-responsive">Search Results for <span>Bukit Jalil (2)</span></h6>
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-lg-5 col-md-12">
                                 <!--Image Card-->
-                                <div class="card">
+                                <div onclick="location.href='listing-single.html'" class="card">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight">
                                             <img src="img/list-prevew-picture.png" class="img-responsive" alt="">
@@ -505,7 +505,7 @@
                                 </div>
                                 <!--Image Card-->
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-lg-5 col-md-12">
                                 <!--Image Card-->
                                 <div onclick="location.href='listing-single.html'" class="card">
                                     <div class="card-image">
@@ -553,7 +553,7 @@
                         </div>
                         <h6 class="h5-responsive">The following results are properties nearby <span>Bukit Jalil (1)</span></h6>
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-lg-5 col-md-12">
                                 <!--Image Card-->
                                 <div onclick="location.href='listing-single.html'" class="card">
                                     <div class="card-image">
