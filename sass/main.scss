@@ -1026,6 +1026,7 @@ input[type="search"].sb-search-input {
 			box-shadow: none;
 			margin-top: 0;
 			.card-content {
+				box-shadow: none;
 				.card-price {
 					text-decoration: line-through;
 				}
@@ -1039,11 +1040,17 @@ input[type="search"].sb-search-input {
 					}
 				}
 			}
+			.carousel-caption {
+				left: 6%;
+				bottom: 0%;
+				@media (max-width: 1169px) { 
+					bottom: -2%;
+				}
+			}
 			.card-title {
 				width: inherit;
-				bottom: -55px;
-                left: -190px;
                 text-align: left;
+                padding: 0;
 			}
 		}
 		.card-details {
