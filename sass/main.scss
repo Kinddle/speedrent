@@ -767,9 +767,6 @@ input[type="search"].sb-search-input {
 .listing-page {
 	overflow: hidden;
 	.navbar-fixed-top {
-		.btn-white {
-    		margin: 20px 10px 20px 0;
-    	}
 		.navbar-brand {
 			background-color: #3f4d65;
 		}
@@ -805,6 +802,9 @@ input[type="search"].sb-search-input {
             right: 21%;
             top: 26%;
 	    }
+	    .btn-white {
+    		margin: 20px 10px 20px 0;
+    	}
 	}
 	.top-nav-collapse {
 		height: 80px;
@@ -876,6 +876,9 @@ input[type="search"].sb-search-input {
     }
     .search-box {
     	height: 80px;
+    	.btn-white {
+    		margin: 20px 27px 20px 0;
+    	}
     	.search-icon {
     		color: #b3b9be;
     		&.active {
@@ -1264,7 +1267,7 @@ input[type="search"].sb-search-input {
 	}
 } 
 
-	
+
 //post
 .post {
 	.navbar-fixed-top {
