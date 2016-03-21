@@ -311,6 +311,13 @@ body {
 	}
 	.high-rise {
 		top: -7px;
+	    position: absolute;
+	    left: 41px;
+	}
+	.landed {
+		position: absolute;
+		top: 0;
+        left: 37px;
 	}
 	label {
 		span {
@@ -358,6 +365,23 @@ body {
   height: 20px;
   border-radius: 3px;
   padding: 3px;
+}
+.high-rise, .landed {
+	width: 38px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+[type="checkbox"]:checked + label + .high-rise {
+	background-image: url(../img/left-high-rise.png);
+}
+[type="checkbox"]:not(:checked) + label + .high-rise {
+    background-image: url(../img/highrise_grey.png);
+}
+[type="checkbox"]:checked + label + .landed {
+	background-image: url(../img/landed_green.png);
+}
+[type="checkbox"]:not(:checked) + label + .landed {
+    background-image: url(../img/left-landed.png);
 }
 /* checked mark aspect changes */
 [type="checkbox"]:not(:checked) + label:after {
