@@ -3,6 +3,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 }
+
 .container {
 	max-width: 1200px;
 }
@@ -996,6 +997,8 @@ input[type="search"].sb-search-input {
     	}
     	.card-image {
     		position: relative;
+    		height: 240px;
+            overflow: hidden;
     		.label-distance {
     			position: absolute;
     			left: 0;
@@ -1044,6 +1047,7 @@ input[type="search"].sb-search-input {
     			}
     			img {
     				height: 20px;
+    				width: inherit;
     			}
     		}
             .card-included-content {

@@ -2,6 +2,11 @@
 $(document).ready(function () {
     /* carousel */
     $('.carousel').carousel();
+    $('.carousel-inner').each(function() {
+
+    if ($(this).children('div').length === 1) $(this).siblings('.carousel-control, .carousel-indicators').hide();
+
+    });
 
     $("#steps-basic").steps({
     headerTag: "h3",
